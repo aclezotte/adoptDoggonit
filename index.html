@@ -2,7 +2,21 @@
 <html>
     <head>
     </head>
-    <body>
+    <body ng-app="badaBingBadaBoom" ng-controller="adoptCtrl">
+        <label for="gender">Sex<br><input type="radio" ng-model="sex" name="sex" value="M">Male<br>
+        <input type="radio" ng-model="sex" name="sex" value="F">Female<br>
+        </label>
+        <label for="age">Age<br><input type="radio" ng-model="age" name="age" value="baby">Baby<br>
+        <input type="radio" ng-model="age" name="age" name="age" value="young">Young<br>
+        <input type="radio" ng-model="age" name="age" name="age" value="adult">Adult<br>
+        <input type="radio" ng-model="age" name="age" name="age" value="senior">Senior<br>
+        </label>
+        <label for="size">Size<br><input type="radio" ng-model="age" name="size" name="size" value="S">Small<br>
+        <input type="radio" ng-model="age" name="size" name="size" value="M">Medium<br>
+        <input type="radio" ng-model="age" name="size" name="size" value="L">Large<br>
+        <input type="radio" ng-model="age" name="size" name="size" value="XL">Extra Large<br>
+        </label>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
