@@ -1,4 +1,4 @@
-var angular.module("badaBingBadaBoom");
+var app = angular.module("badaBingBadaBoom");
 
 app.factory("adoptFactory", function($http){
     
