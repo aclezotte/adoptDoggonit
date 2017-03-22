@@ -1,12 +1,12 @@
 var app = angular.module("badaBingBadaBoom", ["ngRoute"]);
 
-app.config(function($routeProvider, $locationProvider){ 
+app.config(function($routeProvider, $locationProvider){
 
-	$routeProvider 
+	$routeProvider
 
 		.when('/form', {
 
-			controller: 'formCtrl', 
+			controller: 'formCtrl',
 
 			templateUrl: 'view/form.html'
 
@@ -28,7 +28,7 @@ app.config(function($routeProvider, $locationProvider){
 
 		});
 
-	$locationProvider.hashPrefix(''); 
+	$locationProvider.hashPrefix('');
 });
 
 
