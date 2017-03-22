@@ -2,7 +2,12 @@
 <html>
     <head>
     </head>
-    <body ng-app="badaBingBadaBoom" ng-controller="formCtrl">
+    <body ng-app="badaBingBadaBoom">
+    <a href="#/form">Form</a>
+    <a href="#/result">Result</a>
+    <a href="#/adopt">Adopt</a>
+    <ng-view></ng-view>
+<!--
         <label>Sex<br>
             <label for="sexM">
                 <input type="radio" ng-model="sex" name="sex" id="sexM" value="M">Male</label><br>
@@ -30,6 +35,7 @@
                 <input type="radio" ng-model="size" name="size" name="size" id="sizeXL" value="XL">Extra Large</label><br>
         </label>
         <button type="submit" ng-click="sendToFactory(sex, age, size)">Submit</button>
+-->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.js"></script>
         <script src="script/module.js"></script>
