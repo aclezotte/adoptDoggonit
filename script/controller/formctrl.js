@@ -1,6 +1,6 @@
 var app = angular.module("badaBingBadaBoom");
 
-app.controller("adoptCtrl", ["$scope", "adoptFactory", function($scope, adoptFactory){
+app.controller("formCtrl", ["$scope", "adoptFactory", function($scope, adoptFactory){
 
     $scope.sex = "";
     $scope.age = "";
