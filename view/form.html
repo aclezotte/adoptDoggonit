@@ -93,3 +93,31 @@
     <button type="button" class="btn btn-primary" onclick="next()">NEXT</button>
 	</form>
 </section>
+
+        <label>Sex<br>
+            <label for="sexM">
+                <input type="radio" ng-model="sex" name="sex" id="sexM" value="M">Male</label><br>
+            <label for="sexF">
+                <input type="radio" ng-model="sex" name="sex" id="sexF" value="F">Female</label><br>
+        </label>
+        <label for="age">Age<br>
+            <label for="ageB">
+                <input type="radio" ng-model="age" name="age" id="ageB" value="baby">Baby</label><br>
+            <label for="ageY">
+                <input type="radio" ng-model="age" name="age" id="ageY" value="young">Young</label><br>
+            <label for="ageA">
+                <input type="radio" ng-model="age" name="age" id="ageA" value="adult">Adult</label><br>
+            <label for="ageS">
+                <input type="radio" ng-model="age" name="age" id="ageS" value="senior">Senior</label><br>
+        </label>
+        <label for="size">Size<br>
+            <label for="sizeS">
+                <input type="radio" ng-model="size" name="size" name="size" id="sizeS" value="S">Small</label><br>
+            <label for="sizeM">
+                <input type="radio" ng-model="size" name="size" name="size" id="sizeM" value="M">Medium</label><br>
+            <label for="sizeL">
+                <input type="radio" ng-model="size" name="size" name="size" id="sizeL" value="L">Large</label><br>
+            <label for="sizeXL">
+                <input type="radio" ng-model="size" name="size" name="size" id="sizeXL" value="XL">Extra Large</label><br>
+        </label>
+        <button type="submit" ng-click="sendToFactory(sex, age, size)">Submit</button>
