@@ -1,1 +1,1 @@
-var app = angular.module("badaBingBadaBoom", [ngRoute]);
+var app = angular.module("badaBingBadaBoom", ["ngRoute"]);
