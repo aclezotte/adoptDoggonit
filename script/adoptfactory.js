@@ -4,6 +4,8 @@ app.factory("adoptFactory", function ($http) {
 
     var petsObject;
 
+    var pet = {};
+
     return {
 
         getPets: function (sex, age, size) {
@@ -20,6 +22,15 @@ app.factory("adoptFactory", function ($http) {
 
         returnPets: function () {
             return petsObject;
+        },
+
+        petChoice: function (chosenPet) {
+            pet = chosenPet;
+            console.log(pet);
+        },
+
+        returnDisplayPet: function () {
+            return pet;
         }
 
     };

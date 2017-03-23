@@ -1,108 +1,135 @@
 <section>
   <form class="adoptQuiz">
-    <ul class="questions">
+    <div id="question">It's Black Friday. Which deal are you most excited about?</div>
+    <ul class="answers">
       <li>
-        <label for="question1" class="label_radio">
-					<input type="radio" name="answer" value="11">
-						<div id="question1"> <!-- does the user have children? -->
-							It's Black Friday. Which deal are you most excited about?
-						</div>
-				</label>
-      </li>
-      <li>
-        <label for="question2" class="label_radio">
-					<input type="radio" name="answer" value="10">
-						<div id="question2"> <!-- what kind of housing does the user have? -->
-							Which best describes where you live?
-						</div>
-				</label>
-      </li>
-      <li>
-        <label for="question3" class="label_radio">
-					<input type="radio" name="answer" value="9">
-						<div id="question3"> <!-- what is the user's work schedule? -->
-							Which of these best decribe your after-work routine?
-						</div>
-				</label>
-      </li>
-      <li>
-        <label for="question4" class="label_radio">
-					<input type="radio" name="answer" value="8">
-						<div id="question4"> <!-- how willing is the user to train? -->
-							How thin is your patience?
-						</div>
-				</label>
-      </li>
-      <li>
-        <label for="question5" class="label_radio">
-          <input type="radio" name="answer" value="7">
-            <div id="question5"> <!-- how often would the user walk their dog? -->
-              What kind of shoes do you own?
+        <label for="choice1" class="label_radio">
+          <input type="radio" name="answer" value="0">
+            <div id="choice1">
+              75% off all kids clothes and toys
             </div>
         </label>
       </li>
       <li>
-        <label for="question6" class="label_radio">
-          <input type="radio" name="answer" value="6">
-            <div id="question6"> <!-- how much yard space does the user have? -->
-              How fond of cutting the grass are you?
-            </div>
-        </label>
-      </li>
-      <li>
-        <label for="question7" class="label_radio">
-          <input type="radio" name="answer" value="5">
-            <div id="question7"> <!-- how often does the user travel? -->
-              Choose an itinerary:
-            </div>
-        </label>
-      </li>
-      <li>
-        <label for="question8" class="label_radio">
-          <input type="radio" name="answer" value="4">
-            <div id="question8"> <!-- is the user disabled? -->
-              What are your thoughts on ableism?
-            </div>
-        </label>
-      </li>
-      <li>
-        <label for="question9" class="label_radio">
-          <input type="radio" name="answer" value="3">
-            <div id="question9"> <!-- how active is the user? -->
-              Bro, do you even lift?
-            </div>
-        </label>
-      </li>
-      <li>
-        <label for="question10" class="label_radio">
-          <input type="radio" name="answer" value="2">
-            <div id="question10"> <!-- is the user an extrovert or an introvert? -->
-              Which Beyoncé song are you?
-            </div>
-        </label>
-      </li>
-      <li>
-        <label for="question11" class="label_radio">
+        <label for="choice2" class="label_radio">
           <input type="radio" name="answer" value="1">
-            <div id="question11"> <!-- does the user have a pet gender preference? -->
-              Pick a color:
+            <div id="choice2">
+              BOGO school supplies
+            </div>
+        </label>
+      </li>
+      <li>
+        <label for="choice3" class="label_radio">
+          <input type="radio" name="answer" value="2">
+            <div id="choice3">
+              91.8% off all Apple products
+            </div>
+        </label>
+      </li>
+      <li>
+        <label for="choice4" class="label_radio">
+          <input type="radio" name="answer" value="3">
+            <div id="choice4">
+              I'm honestly down for all these sales!
             </div>
         </label>
       </li>
     </ul>
+
     <button type="button" class="btn btn-primary" onclick="next()">NEXT</button>
-	</form>
+  </form>
+  </div>
 </section>
 
 <script>
-var questans0={
-	question:"What type of apples do you prefer?",
-	answer1:"Granny smith - super sour",
-	answer2:"Anything with a bit of a kick",
-	answer3:"Pretty ambivalent tbh",
-	answer4:"Slightly on the sweet side",
-	answer5:"Red delicious - super sweet",
-	image:"http://upload.wikimedia.org/wikipedia/commons/3/3c/Pommes_vertes.JPG",
+var questans0={ //what kind of housing does the user have?
+	question:"Which best describes where you live?",
+	answer1:"An affordable studio apartment in the city",
+	answer2:"A bungalow in the 'burbs",
+	answer3:"A fancy-schmancy mansion with a butler and all",
+	answer4:"A farm",
+	image:"",
+	imageattribution:"",
+};
+var questans1={ //what is the user's work schedule?
+	question:"Which of these best decribes your after-work routine?",
+	answer1:"I'm my own boss! I don't need no routines!",
+	answer2:"Cooking dinner and then watching some TV",
+	answer3:"Happy hour!!!!!!!!!!!!!!!!!!!",
+	answer4:"Hoping in the bed immediately! I'm beat!",
+	image:"",
+	imageattribution:"",
+};
+var questans2={ //how willing is the user to train?
+	question:"How thin is your patience?",
+	answer1:"Too thin for this quiz!",
+	answer2:"Eh, I'm kind of impatient",
+	answer3:"I'm fairly patient",
+	answer4:"I'm actually a really patient person!",
+	image:"",
+	imageattribution:"",
+};
+var questans3={ //how often would the user walk their dog?
+	question:"What kind of shoes do you own?",
+	answer1:"Nothing but heels, sis!",
+	answer2:"Loafers and like one pair of sneakers",
+	answer3:"Just picked up a pair of Nike Flynits! Dope!",
+	answer4:"I have like 5 pairs of hiking boots",
+	image:"",
+	imageattribution:"",
+};
+var questans4={ //how much yard space does the user have?
+	question:"How fond of cutting grass are you?",
+	answer1:"What grass?",
+	answer2:"Not my favorite but I get it done",
+	answer3:"Psh, I pay a lawncare service",
+	answer4:"Ride-on mowers for life!",
+	image:"",
+	imageattribution:"",
+};
+var questans5={ //how often does the user travel?
+	question:"Choose a vacay:",
+	answer1:"Flying out to some trendy island",
+	answer2:"Honestly, I'm cool staying home with snacks and Hulu",
+	answer3:"I go to my family reunion every year. Does that count?",
+	answer4:"Camping!",
+	image:"",
+	imageattribution:"",
+};
+var questans6={ //is the user disabled?
+	question:"What are your thoughts on ableism?",
+	answer1:"As a person with a disablity, I'm complete anti-ableism!",
+	answer2:"Yea, ableism ain't cool",
+	answer3:"I use Tumblr, so I've heard it's bad",
+	answer4:"What's ableism? (you're probably an ableist, bruh)",
+	image:"",
+	imageattribution:"",
+};
+var questans7={ //how active is the user?
+	question:"You setting off the lunk alarm, or nah?",
+	answer1:"The what???",
+	answer2:"Huh?",
+	answer3:"No, but I've seen some jerks do it",
+	answer4:"Bro, do you even lift!?",
+	image:"",
+	imageattribution:"",
+};
+var questans8={ //is the user an extrovert or an introvert?
+	question:"Which Beyoncé are you?",
+	answer1:"Beyoncé as Lily in Fighting Temptations",
+	answer2:"Beyoncé as Carmen in Carmen: A Hip-Hopera",
+	answer3:"Beyoncé as Deena Jones in Dreamgirls",
+	answer4:"Beyoncé as her real life self",
+	image:"",
+	imageattribution:"",
+};
+var questans9={ //does the user have a pet gender preference?
+	question:"Pick a color:",
+	answer1:"Pink",
+	answer2:"Navy blue",
+	answer3:"Green",
+	answer4:"Purple",
+	image:"",
 	imageattribution:"",
 };
 </script>
