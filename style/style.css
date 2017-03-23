@@ -1,0 +1,12 @@
+.petBox {
+    border: 1px solid black;
+    margin: 2% auto;
+    padding: 2%;
+    width: auto;
+    overflow: auto;
+}
+
+.petBox img {
+    float: left;
+    margin-right: 2%;
+}

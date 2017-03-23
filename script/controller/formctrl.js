@@ -1,6 +1,6 @@
 var app = angular.module("badaBingBadaBoom");
 
-app.controller("formCtrl", ["$scope", "adoptFactory", function($scope, adoptFactory){
+app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($scope, adoptFactory, $location){
 
     $scope.sex = "";
     $scope.age = "";
@@ -14,6 +14,7 @@ app.controller("formCtrl", ["$scope", "adoptFactory", function($scope, adoptFact
 
     $scope.sendToFactory = function(sex, age, size) {
         adoptFactory.getPets(sex, age, size);
+        $location.path("/result");
     };
 
 }]);
