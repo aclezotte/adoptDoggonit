@@ -16,7 +16,7 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
   	answer1:"I'm my own boss! I don't need no routines!",
   	answer2:"Cooking dinner and then watching some TV",
   	answer3:"Happy hour!!!!!!!!!!!!!!!!!!!",
-  	answer4:"Hoping in the bed immediately! I'm beat!",
+  	answer4:"Hopping in the bed immediately! I'm beat!",
   	image:"",
   	imageattribution:"",
   };
