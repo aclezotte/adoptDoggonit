@@ -1,1 +1,8 @@
-{{pet.name.$t}}
+<div class="petBox">
+{{pet.name.$t}}<br>
+Contact: {{pet.contact.phone.$t}}<br>
+{{pet.contact.address1.$t}}<br>
+{{pet.contact.city.$t}}, {{pet.contact.state.$t}} {{pet.contact.zip.$t}}<br>
+Sex: {{pet.sex.$t === "F"     ? "Female" : "Male"}}<br>
+<img src="{{pet.media.photos.photo[0].$t}}" alt=""><br>
+</div>
