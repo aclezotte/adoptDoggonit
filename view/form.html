@@ -132,4 +132,25 @@ var questans9={ //does the user have a pet gender preference?
 	image:"",
 	imageattribution:"",
 };
+
+var allquestans=new Array();
+allquestans[0]=questans0;
+allquestans[1]=questans1;
+allquestans[2]=questans2;
+allquestans[3]=questans3;
+allquestans[4]=questans4;
+allquestans[5]=questans5;
+allquestans[6]=questans6;
+allquestans[7]=questans7;
+allquestans[8]=questans8;
+allquestans[9]=questans9;
+
+function nextquestion(variable) {
+	document.getElementById("question").innerHTML=variable.question;
+	document.getElementById("choice1").innerHTML=variable.answer1;
+	document.getElementById("choice2").innerHTML=variable.answer2;
+	document.getElementById("choice3").innerHTML=variable.answer3;
+	document.getElementById("choice4").innerHTML=variable.answer4;
+}
+
 </script>
