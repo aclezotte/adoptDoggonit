@@ -1,6 +1,36 @@
 <section>
-  <form class="adoptQuiz">
-    <div id="question">It's Black Friday. Which deal are you most excited about?</div>
+    <form class="adoptQuiz">
+        <div ng-repeat="question in questions">
+            <h3>{{question.question}}</h3>
+            <ul>
+                <li>
+                    <label for="answer1">
+                        <input type="radio" name="{{question.number}}" id="answer1" ng-click="setAnswer(question.number, 1)">
+                        {{question.answer1}}
+                    </label>
+                </li>
+                <li>
+                    <label for="answer2">
+                        <input type="radio" name="{{question.number}}" id="answer2" ng-click="setAnswer(question.number, 2)">
+                        {{question.answer2}}
+                    </label>
+                </li>
+                <li>
+                    <label for="answer3">
+                        <input type="radio" name="{{question.number}}" id="answer3" ng-click="setAnswer(question.number, 3)">
+                        {{question.answer3}}
+                    </label>
+                </li>
+                <li>
+                    <label for="answer4">
+                        <input type="radio" name="{{question.number}}" id="answer4" ng-click="setAnswer(question.number, 4)">
+                        {{question.answer4}}
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+    <!-- <div id="question">It's Black Friday. Which deal are you most excited about?</div>
     <ul class="answers">
       <li>
         <label for="choice1" class="label_radio">
@@ -34,7 +64,7 @@
             </div>
         </label>
       </li>
-    </ul>
+    </ul> -->
 
     <button type="button" class="btn btn-primary" onclick="next()">NEXT</button>
   </form>
