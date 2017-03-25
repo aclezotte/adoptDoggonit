@@ -168,7 +168,7 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
 
         adoptFactory.getPets($scope.sex, $scope.age, $scope.size);
 
-        $location.path("/result");
+        // $location.path("/result");
     };
 
 }]);
