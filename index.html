@@ -7,10 +7,17 @@
         <a href="#/form">Form</a>
         <a href="#/result">Result</a>
         <a href="#/adopt">Adopt</a>
+        <form ng-controller="indexCtrl">
+            <label for="zip">What's your zip code?
+                <input type="text" id="zip" ng-model="userZip"/>
+            </label>
+            <button ng-click="submitZip()">Submit</button>
+        </form>
         <ng-view></ng-view>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.js"></script>
         <script src="script/module.js"></script>
+        <script src="script/controller/indexctrl.js"></script>
         <script src="script/controller/formctrl.js"></script>
         <script src="script/controller/resultctrl.js"></script>
         <script src="script/controller/adoptctrl.js"></script>

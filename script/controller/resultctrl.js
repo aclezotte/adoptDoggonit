@@ -1,6 +1,6 @@
 var app = angular.module("badaBingBadaBoom");
 
-app.controller("resultCtrl", ["$scope", "adoptFactory", function ($scope, adoptFactory) {
+app.controller("resultCtrl", ["$scope", "adoptFactory", "$location", function ($scope, adoptFactory, $location) {
 
     $scope.pets = [
 {
@@ -321,6 +321,8 @@ app.controller("resultCtrl", ["$scope", "adoptFactory", function ($scope, adoptF
                 adoptFactory.petChoice(value);
             }
         });
+
+        $location.path("/adopt");
     };
 
 }]);

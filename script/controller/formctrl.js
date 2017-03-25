@@ -3,7 +3,7 @@ var app = angular.module("badaBingBadaBoom");
 app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($scope, adoptFactory, $location){
 
     $scope.questions = [
-        { //what kind of housing does the user have?
+        { //kids?
             number: 0,
         	question:"It's Black Friday, which deal are you most excited about?",
         	answer1:"76% off all kids clothes and toys",
@@ -115,33 +115,17 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
         }
     ];
 
-  $scope.answers = [];
+    $scope.answers = [];
 
-  $scope.setAnswer = function (question, answer) {
-      console.log(question);
-      console.log(answer);
-      $scope.answers[question] = answer;
-      console.log($scope.answers);
-  }
+    $scope.setAnswer = function (question, answer) {
+        console.log(question);
+        console.log(answer);
+        $scope.answers[question] = answer;
+        console.log($scope.answers);
+    };
 
-  // var allquestans=new Array();
-  // allquestans[0]=questans0;
-  // allquestans[1]=questans1;
-  // allquestans[2]=questans2;
-  // allquestans[3]=questans3;
-  // allquestans[4]=questans4;
-  // allquestans[5]=questans5;
-  // allquestans[6]=questans6;
-  // allquestans[7]=questans7;
-  // allquestans[8]=questans8;
-  // allquestans[9]=questans9;
-  //
-  // function nextquestion(variable) {
-  // 	document.getElementById("question").innerHTML=variable.question;
-  // 	document.getElementById("choice1").innerHTML=variable.answer1;
-  // 	document.getElementById("choice2").innerHTML=variable.answer2;
-  // 	document.getElementById("choice3").innerHTML=variable.answer3;
-  // 	document.getElementById("choice4").innerHTML=variable.answer4;
-  // }
+    $scope.next = function () {
+        $location.path("/result");
+    };
 
 }]);

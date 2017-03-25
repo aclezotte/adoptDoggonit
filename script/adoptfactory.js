@@ -6,12 +6,19 @@ app.factory("adoptFactory", function ($http) {
 
     var pet = {};
 
+    var zip = "";
+
     return {
 
-        getPets: function (sex, age, size) {
+        getZip: function (userZip) {
+            zip = userZip;
+            console.log(zip);
+        },
+
+        getPets: function (sex, age, size, zip) {
             var promise = $http({
                     method: "GET",
-                    url: "http://api.petfinder.com/pet.find?key=ad9636f9b9a6415e1aaffb6e55316407&animal=dog&location=48226&sex=" + sex + "&age=" + age + "&size=" + size + "&count=5&output=full&format=json"
+                    url: "http://api.petfinder.com/pet.find?key=ad9636f9b9a6415e1aaffb6e55316407&animal=dog&location=" + zip + "&sex=" + sex + "&age=" + age + "&size=" + size + "&count=5&output=full&format=json"
                 }).then(function successCallback(response) {
                     petsObject = response.data.petfinder.pets.pet;
                     console.log(petsObject);
