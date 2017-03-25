@@ -124,7 +124,15 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
         console.log($scope.answers);
     };
 
+    $scope.sex = "";
+
     $scope.next = function () {
+        if ($scope.answers[10] === 1 || $scope.answers[10] === 2) {
+            $scope.sex = "F";
+        } else {
+            $scope.sex = "M";
+        }
+        console.log($scope.sex);
         $location.path("/result");
     };
 
