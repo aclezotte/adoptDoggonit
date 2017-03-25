@@ -6,110 +6,110 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
         { //kids?
             number: 0,
         	question:"It's Black Friday. Which deal are you most excited about?",
-        	answer1:"76% off all kids clothes and toys",
-        	answer2:"BOGO school supplies",
-        	answer3:"91.8% off all Apple Products",
-        	answer4:"I'm honestly down for all these sales!",
+        	answer1: {answer:"76% off all kids clothes and toys", weight: 0},
+        	answer2: {answer:"BOGO school supplies", weight: 2},
+        	answer3: {answer:"91.8% off all Apple Products", weight: 7},
+        	answer4: {answer:"I'm honestly down for all these sales!", weight: 5},
         	image:"",
         	imageattribution:"",
         },
         { //what kind of housing does the user have?
             number: 1,
         	question:"Which best describes where you live?",
-        	answer1:"An affordable studio apartment in the city",
-        	answer2:"A bungalow in the 'burbs",
-        	answer3:"A fancy-schmancy mansion with a butler and all",
-        	answer4:"A farm",
+        	answer1: {answer:"An affordable studio apartment in the city", weight: 0},
+        	answer2: {answer:"A bungalow in the 'burbs", weight: 3},
+        	answer3: {answer:"A fancy-schmancy mansion with a butler and all", weight: 5},
+        	answer4: {answer:"A farm", weight: 6},
         	image:"",
         	imageattribution:"",
         },
         { //what is the user's work schedule?
             number: 2,
         	question:"Which of these best decribes your after-work routine?",
-        	answer1:"I'm my own boss! I don't need no routines!",
-        	answer2:"Cooking dinner and then watching some TV",
-        	answer3:"Happy hour!!!!!!!!!!!!!!!!!!!",
-        	answer4:"Hopping in the bed immediately! I'm beat!",
+        	answer1: {answer:"I'm my own boss! I don't need no routines!", weight: 0},
+        	answer2: {answer:"Cooking dinner and then watching some TV", weight: 2},
+        	answer3: {answer:"Happy hour!!!!!!!!!!!!!!!!!!!", weight: 5},
+        	answer4: {answer:"Hopping in the bed immediately! I'm beat!", weight: 6},
         	image:"",
         	imageattribution:"",
         },
         { //how willing is the user to train?
             number: 3,
         	question:"How thin is your patience?",
-        	answer1:"Too thin for this quiz!",
-        	answer2:"Eh, I'm kind of impatient",
-        	answer3:"I'm fairly patient",
-        	answer4:"I'm actually a really patient person!",
+        	answer1: {answer:"Too thin for this quiz!", weight: 5},
+        	answer2: {answer:"Eh, I'm kind of impatient", weight: 3},
+        	answer3: {answer:"I'm fairly patient", weight: 1},
+        	answer4: {answer:"I'm actually a really patient person!", weight: 0},
         	image:"",
         	imageattribution:"",
         },
         { //how often would the user walk their dog?
             number: 4,
         	question:"What kind of shoes do you own?",
-        	answer1:"Nothing but heels, sis!",
-        	answer2:"Loafers and like one pair of sneakers",
-        	answer3:"Just picked up a pair of Nike Flynits! Dope!",
-        	answer4:"I have like 5 pairs of hiking boots",
+        	answer1: {answer:"Nothing but heels, sis!", weight: 5},
+        	answer2: {answer:"Loafers and like one pair of sneakers", weight: 3},
+        	answer3: {answer:"Just picked up a pair of Nike Flyknits! Dope!", weight: 1},
+        	answer4: {answer:"I have like 5 pairs of hiking boots", weight: 0},
         	image:"",
         	imageattribution:"",
         },
         { //how much yard space does the user have?
             number: 5,
         	question:"How fond of cutting grass are you?",
-        	answer1:"What grass?",
-        	answer2:"Not my favorite but I get it done",
-        	answer3:"Psh, I pay a lawncare service",
-        	answer4:"Ride-on mowers for life!",
+        	answer1: {answer:"What grass?", weight: 0},
+        	answer2: {answer:"Not my favorite but I get it done", weight: 2},
+        	answer3: {answer:"Psh, I pay a lawncare service", weight: 4},
+        	answer4: {answer:"Ride-on mowers for life!", weight: 5},
         	image:"",
         	imageattribution:"",
         },
         { //how often does the user travel?
             number: 6,
         	question:"Choose a vacay:",
-        	answer1:"Flying out to some trendy island",
-        	answer2:"Honestly, I'm cool staying home with snacks and Hulu",
-        	answer3:"I go to my family reunion every year. Does that count?",
-        	answer4:"Camping!",
+        	answer1: {answer:"Flying out to some trendy island", weight: 3},
+        	answer2: {answer:"Honestly, I'm cool staying home with snacks and Hulu", weight: 0},
+        	answer3: {answer:"I go to my family reunion every year. Does that count?", weight: 2},
+        	answer4: {answer:"Camping!", weight: 1},
         	image:"",
         	imageattribution:"",
         },
         { //is the user disabled?
             number: 7,
         	question:"What are your thoughts on ableism?",
-        	answer1:"As a person with a disablity, I'm completely anti-ableism!",
-        	answer2:"Yea, ableism ain't cool",
-        	answer3:"I use Tumblr, so I've heard it's bad",
-        	answer4:"What's ableism? (you're probably an ableist, bruh)",
+        	answer1: {answer:"As a person with a disablity, I'm completely anti-ableism!", weight: 2},
+        	answer2: {answer:"Yea, ableism ain't cool", weight: 0},
+        	answer3: {answer:"I use Tumblr, so I've heard it's bad", weight: 0},
+        	answer4: {answer:"What's ableism? (you're probably an ableist, bruh)", weight: 0},
         	image:"",
         	imageattribution:"",
         },
         { //how active is the user?
             number: 8,
         	question:"You setting off the lunk alarm, or nah?",
-        	answer1:"The what???",
-        	answer2:"Huh?",
-        	answer3:"No, but I've seen some jerks do it",
-        	answer4:"Bro, do you even lift!?",
+        	answer1: {answer:"The what???", weight: 0},
+        	answer2: {answer:"Huh?", weight: 1},
+        	answer3: {answer:"No, but I've seen some jerks do it", weight: 3},
+        	answer4: {answer:"Bro, do you even lift!?", weight: 4},
         	image:"",
         	imageattribution:"",
         },
         { //is the user an extrovert or an introvert?
             number: 9,
         	question:"Which Beyoncé are you?",
-        	answer1:"Beyoncé as Lily in Fighting Temptations",
-        	answer2:"Beyoncé as Carmen in Carmen: A Hip-Hopera",
-        	answer3:"Beyoncé as Deena Jones in Dreamgirls",
-        	answer4:"Beyoncé as her real life self",
+        	answer1: {answer:"Beyoncé as Lily in Fighting Temptations", weight: 1},
+        	answer2: {answer:"Beyoncé as Carmen in Carmen: A Hip-Hopera", weight: 2},
+        	answer3: {answer:"Beyoncé as Deena Jones in Dreamgirls", weight: 0},
+        	answer4: {answer:"Beyoncé as her real life self", weight: 3},
         	image:"",
         	imageattribution:"",
         },
         { //does the user have a pet gender preference?
             number: 10,
           question:"Choose a Disney dog:",
-          answer1:"Perdita",
-          answer2:"Lady",
-          answer3:"Pongo",
-          answer4:"Tramp",
+          answer1: {answer:"Perdita", weight: 0},
+          answer2: {answer:"Lady", weight: 0},
+          answer3: {answer:"Pongo", weight: 0},
+          answer4: {answer:"Tramp", weight: 0},
           image:"",
           imageattribution:"",
         }
@@ -118,13 +118,14 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
     $scope.answers = [];
 
     $scope.setAnswer = function (question, answer) {
-        console.log(question);
-        console.log(answer);
         $scope.answers[question] = answer;
-        console.log($scope.answers);
     };
 
     $scope.sex = "";
+    $scope.size = "";
+    $scope.age = "";
+    $scope.sizePts = 0;
+    $scope.agePts = 0;
 
     $scope.next = function () {
         if ($scope.answers[10] === 1 || $scope.answers[10] === 2) {
@@ -132,7 +133,41 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
         } else {
             $scope.sex = "M";
         }
-        console.log($scope.sex);
+
+        $scope.sizePts = $scope.answers[0]
+                        + $scope.answers[1]
+                        + $scope.answers[5]
+                        + $scope.answers[8]
+                        + $scope.answers[9];
+
+        $scope.agePts = $scope.answers[2]
+                        + $scope.answers[3]
+                        + $scope.answers[4]
+                        + $scope.answers[6]
+                        + $scope.answers[7];
+
+        if ($scope.sizePts < 6) {
+            $scope.size = "S";
+        } else if ($scope.sizePts < 13) {
+            $scope.size = "M";
+        } else if ($scope.sizePts < 19) {
+            $scope.size = "L";
+        } else {
+            $scope.size = "XL";
+        }
+
+        if ($scope.agePts < 6) {
+            $scope.age = "Baby";
+        } else if ($scope.agePts < 13) {
+            $scope.age = "Young";
+        } else if ($scope.age < 19) {
+            $scope.age = "Adult";
+        } else {
+            $scope.age = "Senior";
+        }
+
+        adoptFactory.getPets($scope.sex, $scope.age, $scope.size);
+
         $location.path("/result");
     };
 

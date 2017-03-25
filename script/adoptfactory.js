@@ -15,12 +15,12 @@ app.factory("adoptFactory", function ($http) {
             console.log(zip);
         },
 
-        getPets: function (sex, age, size, zip) {
+        getPets: function (sex, age, size) {
             var promise = $http({
                     method: "GET",
                     url: "http://api.petfinder.com/pet.find?key=ad9636f9b9a6415e1aaffb6e55316407&animal=dog&location=" + zip + "&sex=" + sex + "&age=" + age + "&size=" + size + "&count=5&output=full&format=json"
                 }).then(function successCallback(response) {
-                    petsObject = response.data.petfinder.pets.pet;
+                    petsObject = response;
                     console.log(petsObject);
                 });
 
