@@ -1,6 +1,6 @@
 var app = angular.module("badaBingBadaBoom");
 
-app.factory("adoptFactory", function ($http) {
+app.factory("adoptFactory", function ($http, $route) {
 
     var petsObject;
 
@@ -22,6 +22,7 @@ app.factory("adoptFactory", function ($http) {
                 }).then(function successCallback(response) {
                     petsObject = response.data.petfinder.pets.pet;
                     console.log(petsObject);
+                    $route.reload();
                 });
 
             return promise;

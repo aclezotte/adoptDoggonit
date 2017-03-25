@@ -2,8 +2,6 @@ var app = angular.module("badaBingBadaBoom");
 
 app.controller("resultCtrl", ["$scope", "adoptFactory", "$location", function ($scope, adoptFactory, $location) {
 
-    $scope.pets = [];
-
     $scope.pets = adoptFactory.returnPets();
 
     console.log($scope.pets);
