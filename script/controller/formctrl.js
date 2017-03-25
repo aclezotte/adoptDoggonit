@@ -5,7 +5,7 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
     $scope.questions = [
         { //kids?
             number: 0,
-        	question:"It's Black Friday, which deal are you most excited about?",
+        	question:"It's Black Friday. Which deal are you most excited about?",
         	answer1:"76% off all kids clothes and toys",
         	answer2:"BOGO school supplies",
         	answer3:"91.8% off all Apple Products",
@@ -76,7 +76,7 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
         { //is the user disabled?
             number: 7,
         	question:"What are your thoughts on ableism?",
-        	answer1:"As a person with a disablity, I'm complete anti-ableism!",
+        	answer1:"As a person with a disablity, I'm completely anti-ableism!",
         	answer2:"Yea, ableism ain't cool",
         	answer3:"I use Tumblr, so I've heard it's bad",
         	answer4:"What's ableism? (you're probably an ableist, bruh)",
@@ -105,13 +105,13 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
         },
         { //does the user have a pet gender preference?
             number: 10,
-        	question:"Pick a color:",
-        	answer1:"Pink",
-        	answer2:"Navy blue",
-        	answer3:"Green",
-        	answer4:"Purple",
-        	image:"",
-        	imageattribution:"",
+          question:"Choose a Disney dog:",
+          answer1:"Perdita",
+          answer2:"Lady",
+          answer3:"Pongo",
+          answer4:"Tramp",
+          image:"",
+          imageattribution:"",
         }
     ];
 
