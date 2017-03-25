@@ -1,72 +1,34 @@
 <section>
-    <form class="adoptQuiz">
-        <div ng-repeat="question in questions">
-            <h3>{{question.question}}</h3>
-            <ul>
-                <li>
-                    <label for="answer1">
-                        <input type="radio" name="{{question.number}}" id="answer1" ng-click="setAnswer(question.number, question.answer1.weight)" checked>
-                        {{question.answer1.answer}}
-                    </label>
-                </li>
-                <li>
-                    <label for="answer2">
-                        <input type="radio" name="{{question.number}}" id="answer2" ng-click="setAnswer(question.number, question.answer2.weight)">
-                        {{question.answer2.answer}}
-                    </label>
-                </li>
-                <li>
-                    <label for="answer3">
-                        <input type="radio" name="{{question.number}}" id="answer3" ng-click="setAnswer(question.number, question.answer3.weight)">
-                        {{question.answer3.answer}}
-                    </label>
-                </li>
-                <li>
-                    <label for="answer4">
-                        <input type="radio" name="{{question.number}}" id="answer4" ng-click="setAnswer(question.number, question.answer4.weight)">
-                        {{question.answer4.answer}}
-                    </label>
-                </li>
-            </ul>
-        </div>
-
-    <!-- <div id="question">It's Black Friday. Which deal are you most excited about?</div>
-    <ul class="answers">
-      <li>
-        <label for="choice1" class="label_radio">
-          <input type="radio" name="answer" value="0">
-            <div id="choice1">
-              75% off all kids clothes and toys
-            </div>
-        </label>
-      </li>
-      <li>
-        <label for="choice2" class="label_radio">
-          <input type="radio" name="answer" value="1">
-            <div id="choice2">
-              BOGO school supplies
-            </div>
-        </label>
-      </li>
-      <li>
-        <label for="choice3" class="label_radio">
-          <input type="radio" name="answer" value="2">
-            <div id="choice3">
-              91.8% off all Apple products
-            </div>
-        </label>
-      </li>
-      <li>
-        <label for="choice4" class="label_radio">
-          <input type="radio" name="answer" value="3">
-            <div id="choice4">
-              I'm honestly down for all these sales!
-            </div>
-        </label>
-      </li>
-    </ul> -->
-
-    <button type="button" class="btn btn-primary" ng-click="next()">NEXT</button>
-  </form>
-  </div>
+     <form class="adoptQuiz">
+          <div ng-repeat="question in questions">
+               <h3>{{question.question}}</h3>
+               <ul>
+                    <li>
+                         <label for="answer1">
+                         <input type="radio" name="{{question.number}}" id="answer1" ng-click="setAnswer(question.number, question.answer1.weight)">
+                         {{question.answer1.answer}}
+                         </label>
+                    </li>
+                    <li>
+                         <label for="answer2">
+                         <input type="radio" name="{{question.number}}" id="answer2" ng-click="setAnswer(question.number, question.answer2.weight)">
+                         {{question.answer2.answer}}
+                         </label>
+                    </li>
+                     <li>
+                         <label for="answer3">
+                         <input type="radio" name="{{question.number}}" id="answer3" ng-click="setAnswer(question.number, question.answer3.weight)">
+                         {{question.answer3.answer}}
+                         </label>
+                    </li>
+                    <li>
+                         <label for="answer4">
+                         <input type="radio" name="{{question.number}}" id="answer4" ng-click="setAnswer(question.number, question.answer4.weight)">
+                         {{question.answer4.answer}}
+                         </label>
+                    </li>
+               </ul>
+          </div>
+          <button type="button" class="btn btn-primary" ng-click="next()">NEXT</button>
+     </form>
 </section>
