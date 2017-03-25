@@ -4,9 +4,13 @@
         <link type="text/css" rel="stylesheet" href="style/style.css">
     </head>
     <body ng-app="badaBingBadaBoom">
-        <a href="#/form">Form</a>
-        <a href="#/result">Result</a>
-        <a href="#/adopt">Adopt</a>
+        <span id="navIteration"><a href="#/index">Home</span>
+        <span id="navIteration"><a href="#/form">Form</a></span>
+        <span id="navIteration"><a href="#/result">Result</span>
+        <span id="navIteration"><a href="#/adopt">Adopt</a></span>
+        <form>
+            What is your name?<input type="text" name="name">
+        </form>
         <form ng-controller="indexCtrl">
             <label for="zip">What's your zip code?
                 <input type="text" id="zip" ng-model="userZip"/>
