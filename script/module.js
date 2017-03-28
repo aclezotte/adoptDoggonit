@@ -38,3 +38,4 @@ app.config(function($routeProvider, $locationProvider){
 
 
 // form, adopt, result
+//bug fix

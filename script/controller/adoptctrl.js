@@ -6,3 +6,5 @@ app.controller("adoptCtrl", ["$scope", "adoptFactory", function ($scope, adoptFa
     console.log($scope.pet);
 
 }]);
+
+//bug fix

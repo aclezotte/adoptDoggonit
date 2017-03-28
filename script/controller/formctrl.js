@@ -172,3 +172,4 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
     };
 
 }]);
+//bug fix

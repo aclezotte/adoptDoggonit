@@ -44,3 +44,4 @@ app.factory("adoptFactory", function ($http, $route) {
     };
 
 });
+//bug fix
