@@ -1,10 +1,10 @@
 <section>
      <form class="adoptQuiz">
          <h3>{{questions[activeQ].question}}</h3>
-              <ul>
-                   <li ng-repeat="answer in questions[activeQ].answers">
+              <ul class="list-group">
+                   <li ng-repeat="answer in questions[activeQ].answers" class="list-group-item">
                         <label>
-                            <input type="radio" name="question" ng-click="setAnswer(question.number, question.answer1.weight)">
+                            <input type="radio" name="question" ng-click="setAnswer(activeQ, answer.weight)">
                             {{answer.answer}}
                         </label>
                    </li>
