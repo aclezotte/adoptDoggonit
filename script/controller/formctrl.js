@@ -12,7 +12,7 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
         	    {answer:"91.8% off all Apple Products", weight: 7},
                 {answer:"I'm honestly down for all these sales!", weight: 5}
             ],
-        	image:"",
+        	image: "images/blackfriday.jpg",
         	imageattribution:"",
         },
         { //what kind of housing does the user have?
@@ -24,7 +24,7 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
         	    {answer:"A fancy-schmancy mansion with a butler and all", weight: 5},
         	    {answer:"A farm", weight: 6}
             ],
-        	image:"",
+        	image:"images/doghouse.jpg",
         	imageattribution:"",
         },
         { //what is the user's work schedule?
@@ -129,8 +129,8 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
           answers: [
             {answer:"Perdita", weight: 0},
             {answer:"Lady", weight: 0},
-            {answer:"Pongo", weight: 0},
-            {answer:"Tramp", weight: 0}
+            {answer:"Pongo", weight: 1},
+            {answer:"Tramp", weight: 1}
           ],
           image:"",
           imageattribution:"",
@@ -144,6 +144,10 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
     $scope.setAnswer = function (question, answer) {
         $scope.answers[question] = answer;
         $scope.activeQ ++;
+
+        if ($scope.activeQ > 10) {
+            $scope.next();
+        }
     };
 
     $scope.sex = "";
@@ -153,7 +157,7 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
     $scope.agePts = 0;
 
     $scope.next = function () {
-        if ($scope.answers[10] === 1 || $scope.answers[10] === 2) {
+        if ($scope.answers[10] === 0) {
             $scope.sex = "F";
         } else {
             $scope.sex = "M";
@@ -190,6 +194,10 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
         } else {
             $scope.age = "Senior";
         }
+
+        console.log($scope.sex);
+        console.log($scope.size);
+        console.log($scope.age);
 
         adoptFactory.getPets($scope.sex, $scope.age, $scope.size);
 
