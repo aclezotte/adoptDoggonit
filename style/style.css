@@ -1,3 +1,21 @@
+/*
+
+The colorway
+black: #000000
+red: #ec4343
+pale red: #fb7676
+yellow: #f9d927
+tan: #ddb989
+
+*/
+
+body {
+  background-color: #ffffff;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #6d6d6d;   /* gray */
+}
+
 .petBox {
     border: 1px solid black;
     margin: 2% auto;
