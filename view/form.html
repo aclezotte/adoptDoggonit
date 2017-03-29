@@ -1,34 +1,14 @@
 <section>
      <form class="adoptQuiz">
-          <div ng-repeat="question in questions">
-               <h3>{{question.question}}</h3>
-               <ul>
-                    <li>
-                         <label>
-                             <input type="radio" name="{{question.number}}" ng-click="setAnswer(question.number, question.answer1.weight)">
-                             {{question.answer1.answer}}
-                         </label>
-                    </li>
-                    <li>
-                         <label>
-                             <input type="radio" name="{{question.number}}" ng-click="setAnswer(question.number, question.answer2.weight)">
-                             {{question.answer2.answer}}
-                         </label>
-                    </li>
-                     <li>
-                         <label>
-                             <input type="radio" name="{{question.number}}" ng-click="setAnswer(question.number, question.answer3.weight)">
-                             {{question.answer3.answer}}
-                         </label>
-                    </li>
-                    <li>
-                         <label>
-                             <input type="radio" name="{{question.number}}" ng-click="setAnswer(question.number, question.answer4.weight)">
-                             {{question.answer4.answer}}
-                         </label>
-                    </li>
-               </ul>
-          </div>
+         <h3>{{questions[activeQ].question}}</h3>
+              <ul>
+                   <li ng-repeat="answer in questions[activeQ].answers">
+                        <label>
+                            <input type="radio" name="question" ng-click="setAnswer(question.number, question.answer1.weight)">
+                            {{answer.answer}}
+                        </label>
+                   </li>
+              </ul>
           <button type="button" class="btn btn-primary" ng-click="next()">NEXT</button>
      </form>
 </section>
