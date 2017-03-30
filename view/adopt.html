@@ -1,9 +1,11 @@
 <div class="petBox">
-	<img id="petImage" src="{{pet.media.photos.photo[0].$t}}" alt="No Image Available"></span><br>
-	<span id="petName"> Name: {{pet.name.$t}} </span><br>
-	<span id="petPhone"> Contact: {{pet.contact.phone.$t}} </span><br>
-	<span id="petAddress"> {{pet.contact.address1.$t}} </span><br>
-	<span id="petCity"> {{pet.contact.city.$t}}, {{pet.contact.state.$t}} {{pet.contact.zip.$t}} </span><br>
-	<span id="petGen"> Gender: {{pet.sex.$t === "F"     ? "Female" : "Male"}} </span>
+	<img id="petImage" src="{{pet.media.photos.photo[0].$t}}" alt="No Image Available"></span>
+	<p class="adoptMe">
+		<span id="petName"> Name: {{pet.name.$t}} </span><br>
+		<span id="petPhone"> Contact: {{pet.contact.phone.$t}} </span><br>
+		<span id="petAddress"> {{pet.contact.address1.$t}} </span><br>
+		<span id="petCity"> {{pet.contact.city.$t}}, {{pet.contact.state.$t}} {{pet.contact.zip.$t}} </span><br>
+		<span id="petGen"> Gender: {{pet.sex.$t === "F"     ? "Female" : "Male"}} </span><br>
+	</p>
 </div>
 <!-- let's fix this bug-->
