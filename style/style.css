@@ -16,6 +16,60 @@ body {
   color: #6d6d6d;   /* gray */
 }
 
+header {
+    width: 850px;
+    height: 502px;
+    border:0px ;
+    display: block;
+    margin: auto;
+}
+
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(10deg);}
+    50%{-webkit-transform: rotate(-5deg)}
+    100%{-webkit-transform: rotate(10deg);}
+}
+
+@keyframes swinging{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(10deg);}
+}
+
+.swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
+.nav {
+  background-color: #f9d927 !important;
+  margin-bottom: 20px !important;
+  display: inline-block !important;
+  color: #ffffff !important;
+  text-align: center !important;
+}
+
+.active {
+  background-color: #f9d927 !important;
+}
+
+ul.nav li a:hover {background-color: #fb7676 !important;}
+a:link {text-decoration:none !important;}
+a:visited {text-decoration:none !important;}
+
+button {
+  background-color: #ec4343 !important;
+  border: none !important;
+  color: white !important;
+  padding: 5px 10px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  font-size: 11px !important;
+}
+
 .petBox {
     border: 1px solid black;
     margin: 2% auto;
