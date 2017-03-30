@@ -1,4 +1,4 @@
-<section>
+<div class="col-sm-8">
      <form class="adoptQuiz">
          <h3>{{questions[activeQ].question}}</h3>
               <ul class="list-group">
@@ -9,8 +9,10 @@
                         </label>
                    </li>
               </ul>
-              <img src={{questions[activeQ].image}} />
-          <!-- <button type="button" class="btn btn-primary" ng-click="next()">NEXT</button> -->
+          <button type="button" class="btn btn-primary" ng-click="back()">BACK</button>
      </form>
-</section>
+</div>
+<div class="col-sm-4 thumbnail">
+    <img src={{questions[activeQ].image}} />
+</div>
 <!-- let's fix this bug-->

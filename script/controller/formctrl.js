@@ -36,7 +36,7 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
             	{answer:"Happy hour!!!!!!!!!!!!!!!!!!!", weight: 5},
             	{answer:"Hopping in the bed immediately! I'm beat!", weight: 6}
             ],
-        	image:"",
+        	image:"images/drinks.jpg",
         	imageattribution:"",
         },
         { //how willing is the user to train?
@@ -48,7 +48,7 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
             	{answer:"I'm fairly patient", weight: 1},
             	{answer:"I'm actually a really patient person!", weight: 0}
             ],
-        	image:"",
+        	image:"images/zen.jpg",
         	imageattribution:"",
         },
         { //how often would the user walk their dog?
@@ -60,7 +60,7 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
             	{answer:"Just picked up a pair of Nike Flyknits! Dope!", weight: 1},
             	{answer:"I have like 5 pairs of hiking boots", weight: 0}
             ],
-        	image:"",
+        	image:"images/shoes.jpg",
         	imageattribution:"",
         },
         { //how much yard space does the user have?
@@ -72,7 +72,7 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
                 {answer:"Psh, I pay a lawncare service", weight: 4},
             	{answer:"Ride-on mowers for life!", weight: 5}
             ],
-        	image:"",
+        	image:"images/lawnmower.jpg",
         	imageattribution:"",
         },
         { //how often does the user travel?
@@ -84,7 +84,7 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
             	{answer:"I go to my family reunion every year. Does that count?", weight: 2},
             	{answer:"Camping!", weight: 1}
             ],
-        	image:"",
+        	image:"images/vacation.jpg",
         	imageattribution:"",
         },
         { //is the user disabled?
@@ -96,7 +96,7 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
             	{answer:"I use Tumblr, so I've heard it's bad", weight: 0},
             	{answer:"What's ableism? (you're probably an ableist, bruh)", weight: 0}
             ],
-        	image:"",
+        	image:"images/swimmer.jpg",
         	imageattribution:"",
         },
         { //how active is the user?
@@ -108,7 +108,7 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
             	{answer:"No, but I've seen some jerks do it", weight: 3},
             	{answer:"Bro, do you even lift!?", weight: 4}
             ],
-        	image:"",
+        	image:"images/weightlifting.jpg",
         	imageattribution:"",
         },
         { //is the user an extrovert or an introvert?
@@ -120,7 +120,7 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
             	{answer:"Beyoncé as Deena Jones in Dreamgirls", weight: 0},
             	{answer:"Beyoncé as her real life self", weight: 3}
             ],
-        	image:"",
+        	image:"images/beyonce.gif",
         	imageattribution:"",
         },
         { //does the user have a pet gender preference?
@@ -132,7 +132,7 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
             {answer:"Pongo", weight: 1},
             {answer:"Tramp", weight: 1}
           ],
-          image:"",
+          image:"images/pongoperdita.gif",
           imageattribution:"",
         }
     ];
@@ -140,6 +140,10 @@ app.controller("formCtrl", ["$scope", "adoptFactory", "$location", function($sco
     $scope.activeQ = 0;
 
     $scope.answers = [];
+
+    $scope.back = function () {
+        $scope.activeQ --;
+    }
 
     $scope.setAnswer = function (question, answer) {
         $scope.answers[question] = answer;
