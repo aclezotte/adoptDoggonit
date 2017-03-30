@@ -99,7 +99,7 @@ button {
 	font-family: sans-serif;
 	font-size: 36px;
 	position: relative;
-	left: 40%;	
+	left: 40%;
 }
 
 #petAddress {
@@ -110,11 +110,17 @@ button {
 }
 #petCity {
 	font-family: sans-serif;
-	font-size: 36px;	
+	font-size: 36px;
 	position: relative;
 	left: 40%;
 }
-#petGen {
+#petSex {
+	font-family: sans-serif;
+	font-size: 36px;
+	position: relative;
+	left: 40%;
+}
+#petAge {
 	font-family: sans-serif;
 	font-size: 36px;
 	position: relative;
