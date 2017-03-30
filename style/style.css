@@ -70,6 +70,10 @@ button {
   font-size: 11px !important;
 }
 
+.petBox img {
+    float: left;
+    margin-right: 2%;
+}
 .petBox {
     border: 1px solid black;
     margin: 2% auto;
@@ -78,7 +82,27 @@ button {
     overflow: auto;
 }
 
-.petBox img {
-    float: left;
-    margin-right: 2%;
+#petName {
+	font-family: sans-serif;
+	font-size: 48px;
 }
+
+#petPhone {
+	font-family: sans-serif;
+	font-size: 36px;	
+}
+
+#petAddress {
+	font-family: sans-serif;
+	font-size: 36px;
+}
+#petCity {
+	font-family: sans-serif;
+	font-size: 36px;	
+}
+#petGen {
+	font-family: sans-serif;
+	font-size: 36px;
+}
+/*
+#petImage {
