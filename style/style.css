@@ -76,6 +76,9 @@ button {
 	margin-right: auto;
 	width: auto;
 	display: block;
+	border-radius: 25%;
+	width: 30%;
+	height: 30%;
 }
 .petBox {
     border: 1px solid black;
