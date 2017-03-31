@@ -147,19 +147,19 @@
     "@navbar-padding-vertical": "((@navbar-height - @line-height-computed) / 2)",
     "@navbar-collapse-max-height": "340px",
     "@navbar-default-color": "#777",
-    "@navbar-default-bg": "#f8f8f8",
+    "@navbar-default-bg": "#f9d927",
     "@navbar-default-border": "darken(@navbar-default-bg, 6.5%)",
     "@navbar-default-link-color": "#777",
-    "@navbar-default-link-hover-color": "#333",
+    "@navbar-default-link-hover-color": "#ec4343",
     "@navbar-default-link-hover-bg": "transparent",
-    "@navbar-default-link-active-color": "#555",
+    "@navbar-default-link-active-color": "#ddb989",
     "@navbar-default-link-active-bg": "darken(@navbar-default-bg, 6.5%)",
     "@navbar-default-link-disabled-color": "#ccc",
     "@navbar-default-link-disabled-bg": "transparent",
     "@navbar-default-brand-color": "@navbar-default-link-color",
     "@navbar-default-brand-hover-color": "darken(@navbar-default-brand-color, 10%)",
     "@navbar-default-brand-hover-bg": "transparent",
-    "@navbar-default-toggle-hover-bg": "#ddd",
+    "@navbar-default-toggle-hover-bg": "#ec4343",
     "@navbar-default-toggle-icon-bar-bg": "#888",
     "@navbar-default-toggle-border-color": "#ddd",
     "@navbar-inverse-color": "lighten(@gray-light, 15%)",
@@ -382,7 +382,11 @@
     "@hr-border": "@gray-lighter"
   },
   "css": [
-    "grid.less"
+    "grid.less",
+    "forms.less",
+    "buttons.less",
+    "input-groups.less",
+    "jumbotron.less"
   ],
   "js": [
     "alert.js",
@@ -398,5 +402,5 @@
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=2c2ed84a226c6c2d1bd72748009b7fb8"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=74ffe9d28c6ca1e3c312080d6e05722b"
 }
