@@ -3,11 +3,6 @@ var app = angular.module("badaBingBadaBoom", ["ngRoute"]);
 app.config(function($routeProvider, $locationProvider){
 
 	$routeProvider
-		.when('/index', {
-
-			templateUrl: '/index.html'
-
-		})
 
 		.when('/form', {
 

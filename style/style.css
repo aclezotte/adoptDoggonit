@@ -60,19 +60,23 @@ header {
     text-align: center;
 }
 
-/*.nav {
-  background-color: #f9d927 !important;
-  margin-bottom: 20px !important;
-  display: inline-block !important;
-  color: #ffffff !important;
-  text-align: center !important;
+li a {
+    display: block;
+    color: black;
+}
+
+li:hover {
+    background-color: #fb7676;
+}
+
+li a:hover {
+    color: white;
 }
 
 .active {
   background-color: #f9d927 !important;
 }
 
-ul.nav li a:hover {background-color: #fb7676 !important;}
 a:link {text-decoration:none !important;}
 a:visited {text-decoration:none !important;}*/
 
@@ -86,8 +90,47 @@ button {
   display: inline-block !important;
   font-size: 11px !important;
 }
+.petBox {
+    border: 5px solid #f9d927;
+    margin: 2% auto;
+    padding: 2%;
+    width: auto;
+    overflow: auto;
+}
 
-.petBox img {
+#thumbs{
+	position: relative;
+	float: left;
+	clear: left;
+	padding-bottom: 200px;
+}
+#petName2{
+	font-family: sans-serif;
+	font-size: 24px;
+	position: relative;
+	left: 150px;
+}
+#petSex2{
+	font-family: sans-serif;
+	font-size: 24px;
+	position: relative;
+	left: 150px;
+}
+#petAge{
+	font-family: sans-serif;
+	font-size: 24px;
+	position: relative;
+	left: 150px;
+}
+#size{
+	font-family: sans-serif;
+	font-size: 24px;
+	position: relative;
+	left: 150px;
+}
+
+/* DO NOT TOUCH \/\/\/\/\/\/\/\/\/\/ ----------------------- */
+#petImage {
 	position: relative;
   margin-left: auto;
 	margin-right: auto;
@@ -115,7 +158,6 @@ button {
 	font-family: sans-serif;
 	font-size: 36px;
 	position: relative;
-	left: 40%;
 }
 
 #petAddress {
@@ -127,18 +169,17 @@ button {
 	font-family: sans-serif;
 	font-size: 36px;
 	position: relative;
-	left: 40%;
 }
 #petSex {
 	font-family: sans-serif;
 	font-size: 36px;
 	position: relative;
 }
-#petAge2 {
+#petGen {
 	font-family: sans-serif;
 	font-size: 36px;
 	position: relative;
-}
+	}
 .adoptMe{
 	text-align: center;
 	margin-left: auto;
