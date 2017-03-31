@@ -60,19 +60,23 @@ header {
     text-align: center;
 }
 
-/*.nav {
-  background-color: #f9d927 !important;
-  margin-bottom: 20px !important;
-  display: inline-block !important;
-  color: #ffffff !important;
-  text-align: center !important;
+li a {
+    display: block;
+    color: black;
+}
+
+li:hover {
+    background-color: #fb7676;
+}
+
+li a:hover {
+    color: white;
 }
 
 .active {
   background-color: #f9d927 !important;
 }
 
-ul.nav li a:hover {background-color: #fb7676 !important;}
 a:link {text-decoration:none !important;}
 a:visited {text-decoration:none !important;}*/
 
