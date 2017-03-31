@@ -89,7 +89,7 @@ button {
 
 .petBox img {
 	position: relative;
-    margin-left: auto;
+  margin-left: auto;
 	margin-right: auto;
 	width: auto;
 	display: block;
@@ -98,7 +98,7 @@ button {
 	height: 30%;
 }
 .petBox {
-    border: 1px solid black;
+    border: 5px solid #f9d927;
     margin: 2% auto;
     padding: 2%;
     width: auto;
