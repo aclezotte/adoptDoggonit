@@ -90,8 +90,46 @@ button {
   display: inline-block !important;
   font-size: 11px !important;
 }
+.petBox {
+    border: 1px solid black;
+    margin: 2% auto;
+    padding: 2%;
+    width: auto;
+    overflow: auto;
+}
 
-.petBox img {
+#thumbs{
+	position: relative;
+	float: left;
+	clear: left;
+}
+#petName2{
+	font-family: sans-serif;
+	font-size: 36px;
+	position: relative;
+	left: 150px;
+}
+#petSex2{
+	font-family: sans-serif;
+	font-size: 36px;
+	position: relative;
+	left: 150px;
+}
+#petAge{
+	font-family: sans-serif;
+	font-size: 36px;
+	position: relative;
+	left: 150px;
+}
+#size{
+	font-family: sans-serif;
+	font-size: 36px;
+	position: relative;
+	left: 150px;
+}
+
+/* DO NOT TOUCH \/\/\/\/\/\/\/\/\/\/ ----------------------- */
+#petImage {
 	position: relative;
     margin-left: auto;
 	margin-right: auto;
@@ -100,13 +138,6 @@ button {
 	border-radius: 25%;
 	width: 30%;
 	height: 30%;
-}
-.petBox {
-    border: 1px solid black;
-    margin: 2% auto;
-    padding: 2%;
-    width: auto;
-    overflow: auto;
 }
 
 #petName {
@@ -119,7 +150,6 @@ button {
 	font-family: sans-serif;
 	font-size: 36px;
 	position: relative;
-	left: 40%;
 }
 
 #petAddress {
@@ -131,13 +161,17 @@ button {
 	font-family: sans-serif;
 	font-size: 36px;
 	position: relative;
-	left: 40%;
 }
 #petSex {
 	font-family: sans-serif;
 	font-size: 36px;
 	position: relative;
 }
+#petGen {
+	font-family: sans-serif;
+	font-size: 36px;
+	position: relative;
+	}
 #petAge {
 	font-family: sans-serif;
 	font-size: 36px;
