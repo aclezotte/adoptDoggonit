@@ -96,7 +96,14 @@ button {
     padding: 2%;
     width: auto;
     overflow: auto;
+    color: #ec4343;
+    font-weight: bolder;
 }
+
+.petBox a {
+	color: #ec4343;
+}
+
 
 #thumbs{
 	position: relative;
