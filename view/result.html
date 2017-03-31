@@ -1,10 +1,5 @@
 <div ng-repeat="pet in pets" class="petBox" ng-switch on="pet.size.$t">
     <a ng-click="choosePet(pet.name.$t)">
-        <img src="{{pet.media.photos.photo[2].$t}}" alt="">
-        <span id="petName2">Name: {{pet.name.$t}}</span><br />
-        <span id="petSex">Sex: {{pet.sex.$t === "F"     ? "Female" : "Male"}}</span><br />
-        <span id="petAge">Age: {{pet.age.$t}}</span><br />
-        <span ng-switch-when="S">Size: Small</span>
         <img id="thumbs" src="{{pet.media.photos.photo[1].$t}}" alt="No Image">
         <p span id="petName2">Name: {{pet.name.$t}}</span></p>
         <p span id="petSex2">Sex: {{pet.sex.$t === "F"     ? "Female" : "Male"}}</span></p>
