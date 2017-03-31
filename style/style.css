@@ -47,6 +47,13 @@ header {
     padding-bottom: 5%;
 }
 
+.textlogo {
+    max-width: 80%;
+    position: relative;
+    left: 50%;
+    margin-left: -35%;
+}
+
 .nav {
     width: 100%;
 }
@@ -79,6 +86,10 @@ li a:hover {
 
 a:link {text-decoration:none !important;}
 a:visited {text-decoration:none !important;}*/
+
+.quizImg {
+    max-width: 100%;
+}
 
 button {
   background-color: #ec4343 !important;
