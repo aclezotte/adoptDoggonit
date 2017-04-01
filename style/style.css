@@ -54,10 +54,11 @@ it). in this case, we want the image to retain the style set for 100%.
     transform-origin: 50% 0;
     -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
     animation: swinging 3.5s ease-in-out forwards infinite;
-}
-
-#header {
-    padding-bottom: 5%;
+    max-width: 80%;
+    max-height: 80%;
+    position: relative;
+    left: 50%;
+    margin-left: -38%;
 }
 
 .textlogo {
@@ -68,45 +69,12 @@ it). in this case, we want the image to retain the style set for 100%.
     margin-left: -35%;
 }
 
-/*.nav {
-    width: 100%;
+.navbar {
+    margin-bottom: 5%;
 }
-
-.nav li {
-    float: left;
-    list-style-type: none;
-    width: 25%;
-    background-color: #f9d927;
-    padding: 1%;
-    text-align: center;
-}
-
-li a {
-    display: block;
-    color: black;
-}
-
-li:hover {
-    background-color: #fb7676;
-}
-
-li a:hover {
-    color: white;
-}
-
-.active {
-  background-color: #f9d927 !important;
-}
-
-a:link {text-decoration:none !important;}
-a:visited {text-decoration:none !important;}*/
 
 .thumbnail {
     overflow: auto;
-}
-
-li {
-    list-style-type: none;
 }
 
 .jumbotron {
@@ -256,12 +224,10 @@ button {
 /*
 #petImage { */
 
-
 /* ----------- tablets ----------- */
 @media only screen
   and (min-width: 737px)
   and (max-width: 1024px)  {
-
 }
 
 /* ------------- phones ----------- */
