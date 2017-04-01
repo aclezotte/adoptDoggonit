@@ -75,8 +75,21 @@
             </form>
         </div>
         <div class="row">
-            <ng-view></ng-view>
+            <div class="col-xs-2"></div>
+            <div class="col-xs-2">
+                <quiz-me>
+                </quiz-me>
+            </div>
+            <div class="col-xs-4"></div>
+            <div class="col-xs-2">
+                <pup-grade>
+                </pup-grade>
+            </div>
+            <div class="col-xs-2"></div>
         </div>
+        <div class="row">
+            <ng-view></ng-view>
+        </div>            
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.js"></script>

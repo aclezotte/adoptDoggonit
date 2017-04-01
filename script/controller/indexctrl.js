@@ -16,3 +16,19 @@ app.controller("indexCtrl", function ($scope, adoptFactory, $location) {
     }
 
 });
+
+app.directive("quizMe", function(){
+    return {
+        restrict: "E",
+        templateUrl: "quiz-me.html",
+        replace: false
+    };
+ })   
+
+app.directive("pupGrade", function(){
+    return {
+        restric: "E",
+        templateUrl: "pup-grade.html",
+        replace: false
+    };
+});
