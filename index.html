@@ -35,6 +35,23 @@
                 </div>
             </div>
         </nav>
+        <nav id="normalNav">
+            <ul>
+                <li>
+                    <a ng-click="tab('', false)">Home</a>
+                </li>
+                <li>
+                    <a ng-click="tab('/form', true)">Quiz</a>
+                </li>
+                <li>
+                    <a ng-click="tab('/result', true)">Results</a>
+                </li>
+                <li>
+                    <a ng-click="tab('/adopt', true)">Adopt</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
         <div class="row">
             <!-- <div class="col-xs-12" id="logoWrap"> -->
                 <header ng-hide="hideLogo" >
