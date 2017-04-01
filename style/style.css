@@ -16,12 +16,30 @@ body {
   color: #6d6d6d;   /* gray */
 }
 
+.navbar a {
+    color: black;
+    background-color: #f9d927;
+    text-decoration: none;
+}
+
+.navbar a:link {
+    color: white;
+}
+.navbar a:visited {
+    color: white;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
 header {
-    width: 850px;
-    height: 502px;
+    /*width: 850px;
+    height: 502px;*/
     border:0px ;
     display: block;
     margin: auto;
+    margin-top: 5%;
 }
 
 /* webkit for older versions of Chrome, Firefox, etc */
@@ -50,55 +68,75 @@ wanted to offset that, we could change the percentage. the first value controls 
 it). in this case, we want the image to retain the style set for 100%.
  */
 .swingimage{
-    -webkit-transform-origin: 50% 0;
+    /*-webkit-transform-origin: 50% 0;
     transform-origin: 50% 0;
     -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
-    animation: swinging 3.5s ease-in-out forwards infinite;
-}
-
-#header {
-    padding-bottom: 5%;
+    animation: swinging 3.5s ease-in-out forwards infinite;*/
+    max-width: 50%;
+    max-height: 50%;
+    width: auto;
+    position: relative;
+    left: 50%;
+    margin-left: -25%;
 }
 
 .textlogo {
-    max-width: 80%;
+    /*margin-top: -5%;*/
+    max-width: 60%;
     position: relative;
     left: 50%;
-    margin-left: -35%;
+    margin-left: -30%;
 }
 
-.nav {
-    width: 100%;
-}
-
-.nav li {
+#normalNav li {
     float: left;
     list-style-type: none;
     width: 25%;
-    background-color: #f9d927;
-    padding: 1%;
-    text-align: center;
 }
 
-li a {
+#normalNav a {
     display: block;
+    text-decoration: none;
     color: black;
+    background-color: #f9d927;
+    text-align: center;
+    padding: 7%;
 }
 
-li:hover {
-    background-color: #fb7676;
-}
-
-li a:hover {
+#normalNav a:hover {
+    background-color: #ec4343;
     color: white;
 }
 
-.active {
-  background-color: #f9d927 !important;
+.thumbnail {
+    overflow: auto;
 }
 
-a:link {text-decoration:none !important;}
-a:visited {text-decoration:none !important;}*/
+.jumbotron {
+    overflow: auto;
+}
+
+.adoptQuiz a {
+    display: inline-block;
+    padding: 0.5em;
+    font-size: 1.5em;
+    text-decoration: none;
+    /*background-color: #ec4343;*/
+    color: black;
+    font-weight: bold;
+    /*border-radius: 5px;*/
+    /*margin-left: -8%;*/
+    width: auto;
+}
+
+.jumbotron h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.adoptQuiz li:hover {
+    background-color: transparent;
+}
 
 .quizImg {
     max-width: 100%;
@@ -112,7 +150,7 @@ button {
   text-align: center !important;
   text-decoration: none !important;
   display: inline-block !important;
-  font-size: 11px !important;
+  font-size: 1.5em;
 }
 .petBox {
     border: 5px solid #f9d927;
@@ -217,15 +255,41 @@ button {
 	margin-right: auto;
 	display: block;
 }
+.navbar {
+    display: none;
+}
+
 /*
 #petImage { */
 
+@media only screen and (max-width: 768px) {
+    #normalNav {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .swingimage{
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+        animation: swinging 3.5s ease-in-out forwards infinite;
+        max-width: 60%;
+        max-height: 60%;
+        position: relative;
+        left: 50%;
+        margin-left: -30%;
+    }
+}
 
 /* ----------- tablets ----------- */
 @media only screen
   and (min-width: 737px)
   and (max-width: 1024px)  {
-
 }
 
 /* ------------- phones ----------- */
