@@ -5,8 +5,8 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=42d995f50864b6a95bfc80fdacc02be9)
- * Config saved to config.json and https://gist.github.com/42d995f50864b6a95bfc80fdacc02be9
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=83096e7846566913ff01555020152a28)
+ * Config saved to config.json and https://gist.github.com/83096e7846566913ff01555020152a28
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -3994,7 +3994,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: #ec4343;
 }
 .nav > li.disabled > a {
   color: #777777;
@@ -4009,7 +4009,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #eeeeee;
+  background-color: #ec4343;
   border-color: #337ab7;
 }
 .nav .nav-divider {
