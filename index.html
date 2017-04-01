@@ -60,40 +60,6 @@
         <img ng-show="hideLogo" class="textlogo" src="images/logotextonly.png" alt="logo"/>
         <!-- </div> -->
     </div>
-        <div class="row">
-            <!-- <div class="col-xs-12" id="logoWrap"> -->
-                <header ng-hide="hideLogo" >
-                    <img class="swingimage" src="images/logo.png" alt="logo"/>
-                </header>
-                <!-- changes the logo to text only logo when navigating away from the home page -->
-                <img ng-show="hideLogo" class="textlogo" src="images/logotextonly.png" alt="logo"/>
-            <!-- </div> -->
-        </div>
-        <div class="row">
-            <form>
-                What is your name?<input type="text" name="name">
-            </form>
-            <form>
-                <label for="zip">What's your zip code?
-                    <input type="text" id="zip" ng-model="userZip"/>
-                </label>
-                <!-- sends zipcode to the factory -->
-                <!-- <button ng-click="submitZip()">Submit</button> -->
-            </form>
-        </div>
-        <div class="row">
-            <div class="col-xs-2"></div>
-            <div class="col-xs-2">
-                <quiz-me ng-click="submitZip()">
-                </quiz-me>
-            </div>
-            <div class="col-xs-4"></div>
-            <div class="col-xs-2">
-                <pup-grade ng-click="submitZip()">
-                </pup-grade>
-            </div>
-            <div class="col-xs-2"></div>
-        </div>
     <div class="row">
         <form>
             <label for="zip">What's your zip code?
