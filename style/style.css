@@ -49,10 +49,10 @@ header {
 }
 
 .textlogo {
-    max-width: 80%;
+    max-width: 60%;
     position: relative;
     left: 50%;
-    margin-left: -35%;
+    margin-left: -27%;
 }
 
 .nav {
@@ -96,8 +96,37 @@ li {
     list-style-type: none;
 }
 
+.jumbotron {
+    overflow: auto;
+}
+
+.adoptQuiz a {
+    display: inline-block;
+    padding: 0.5em;
+    font-size: 1.5em;
+    text-decoration: none;
+    background-color: #ec4343;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    margin-left: -8%;
+    width: auto;
+}
+
+.jumbotron h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.adoptQuiz li:hover {
+    background-color: transparent;
+}
+
 .quizImg {
     max-width: 100%;
+    border-radius: 15px;
+    border: 10px solid #ec4343;
 }
 
 button {
@@ -108,8 +137,8 @@ button {
   text-align: center !important;
   text-decoration: none !important;
   display: inline-block !important;
-  font-size: 11px !important;
-}
+  font-size: 1.5em;
+
 .petBox {
     border: 5px solid #f9d927;
     margin: 2% auto;
@@ -214,4 +243,3 @@ button {
 	margin-right: auto;
 	display: block;
 }
-
