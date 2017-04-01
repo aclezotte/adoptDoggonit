@@ -2,14 +2,43 @@
 <html>
 <head>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
     <link type="text/css" rel="stylesheet" href="style/style.css">
-    <title>Pa'tnah lemme Pupgrade U ™</title>
+    <title>Pupgrade U ™ | find your fur-ever friend</title>
 </head>
 <body ng-app="badaBingBadaBoom" ng-controller="indexCtrl">
     <div class="container">
-        <div class="row" id="header">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a ng-click="tab('', false)">Home</a>
+                        </li>
+                        <li>
+                            <a ng-click="tab('/form', true)">Quiz</a>
+                        </li>
+                        <li>
+                            <a ng-click="tab('/result', true)">Results</a>
+                        </li>
+                        <li>
+                            <a ng-click="tab('/adopt', true)">Adopt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <div class="row" id="header">
             <ul class="nav">
                 <li>
+                  <!-- 'tab' allows for the showing/hiding of the logo for pages other than home -->
                     <a ng-click="tab('', false)">Home</a>
                 </li>
                 <li>
@@ -22,12 +51,13 @@
                     <a ng-click="tab('/adopt', true)">Adopt</a>
                 </li>
             </ul>
-        </div>
+        </div> -->
         <div class="row">
             <div class="col-xs-12" id="logoWrap">
                 <header ng-hide="hideLogo" >
                     <img class="swingimage" src="images/logo.png" width="850" height="502" alt="logo" align="center"/>
                 </header>
+                <!-- changes the logo to text only logo when navigating away from the home page -->
                 <img ng-show="hideLogo" class="textlogo" src="images/logotextonly.png" alt="logo" align="center"/>
             </div>
         </div>
@@ -39,6 +69,7 @@
                 <label for="zip">What's your zip code?
                     <input type="text" id="zip" ng-model="userZip"/>
                 </label>
+                <!-- sends zipcode to the factory -->
                 <button ng-click="submitZip()">Submit</button>
             </form>
         </div>
@@ -62,6 +93,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script src="script/module.js"></script>
     <script src="script/controller/indexctrl.js"></script>
     <script src="script/controller/formctrl.js"></script>
@@ -70,4 +102,3 @@
     <script src="script/adoptfactory.js"></script>
 </body>
 </html>
-
