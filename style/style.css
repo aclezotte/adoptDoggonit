@@ -68,7 +68,7 @@ it). in this case, we want the image to retain the style set for 100%.
     margin-left: -35%;
 }
 
-.nav {
+/*.nav {
     width: 100%;
 }
 
@@ -99,7 +99,7 @@ li a:hover {
 }
 
 a:link {text-decoration:none !important;}
-a:visited {text-decoration:none !important;}
+a:visited {text-decoration:none !important;}*/
 
 .thumbnail {
     overflow: auto;
