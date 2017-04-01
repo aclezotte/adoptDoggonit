@@ -18,7 +18,20 @@ app.factory("adoptFactory", function ($http, $route) {
         getPets: function (sex, age, size) {
             var promise = $http({
                     method: "GET",
-                    url: "https://api.petfinder.com/pet.find?key=ad9636f9b9a6415e1aaffb6e55316407&animal=dog&location=" + zip + "&sex=" + sex + "&age=" + age + "&size=" + size + "&count=5&output=full&format=json"
+                    url: "https://api.petfinder.com/pet.find?key=ad9636f9b9a6415e1aaffb6e55316407&animal=dog&location=" + zip + "&sex=" + sex + "&age=" + age + "&size=" + size + "&output=full&format=json"
+                }).then(function successCallback(response) {
+                    petsObject = response.data.petfinder.pets.pet;
+                    console.log(petsObject);
+                    $route.reload();
+                });
+
+            return promise;
+        },
+
+        noQuiz: function () {
+            var promise = $http({
+                    method: "GET",
+                    url: "https://api.petfinder.com/pet.find?key=ad9636f9b9a6415e1aaffb6e55316407&animal=dog&location=" + zip + "&output=full&format=json"
                 }).then(function successCallback(response) {
                     petsObject = response.data.petfinder.pets.pet;
                     console.log(petsObject);

@@ -1,14 +1,14 @@
 <div ng-repeat="pet in pets" class="petBox" ng-switch on="pet.size.$t">
     <a ng-click="choosePet(pet.name.$t)">
-        <img id="thumbs" src="{{pet.media.photos.photo[1].$t}}" alt="No Image">
-        <p span id="petName2">Name: {{pet.name.$t}}</span></p>
-        <p span id="petSex2">Sex: {{pet.sex.$t === "F"     ? "Female" : "Male"}}</span></p>
-        <p span id="petAge">Age: {{pet.age.$t}}</span></p>
-        <p id="size"><span ng-switch-when="S">Size: Small</span>
-        <span ng-switch-when="M">Size: Medium</span>
-        <span ng-switch-when="L">Size: Large</span>
-        <span ng-switch-when="XL">Size: Extra Large</span></p>
+        <img class="thumbs" src="{{pet.media.photos.photo[1].$t}}" alt="No Image">
+        <div class="infoBox">
+            <p span class="petName">Name: {{pet.name.$t}}</span></p>
+            <p span class="petSex">Sex: {{pet.sex.$t === "F"     ? "Female" : "Male"}}</span></p>
+            <p span class="petAge">Age: {{pet.age.$t}}</span></p>
+            <p class="petSize"><span ng-switch-when="S">Size: Small</span>
+            <span ng-switch-when="M">Size: Medium</span>
+            <span ng-switch-when="L">Size: Large</span>
+            <span ng-switch-when="XL">Size: Extra Large</span></p>
+        </div>
     </a>
 </div>
-
-
