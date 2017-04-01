@@ -15,6 +15,13 @@ app.controller("indexCtrl", function ($scope, adoptFactory, $location) {
         $scope.hideLogo = true;
     }
 
+    $scope.skipQuiz = function () {
+        adoptFactory.getZip($scope.userZip);
+        adoptFactory.noQuiz();
+        $location.path("/result");
+        $scope.hideLogo = true;
+    }
+
 });
 
 app.directive("quizMe", function(){
@@ -23,11 +30,22 @@ app.directive("quizMe", function(){
         templateUrl: "quiz-me.html",
         replace: false
     };
- })   
+ })
 
 app.directive("pupGrade", function(){
+
+    // var controller = ["$scope", function($scope) {
+    //     $scope.skipQuiz = function () {
+    //         adoptFactory.getZip($scope.userZip);
+    //         adoptFactory.noQuiz();
+    //         $location.path("/result");
+    //         $scope.hideLogo = true;
+    //     }
+    // }];
+
     return {
-        restric: "E",
+        restrict: "E",
+        // controller: "pupgradeCtrl",
         templateUrl: "pup-grade.html",
         replace: false
     };

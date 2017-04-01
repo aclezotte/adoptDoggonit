@@ -1,3 +1,9 @@
 <div class="pup-grade">
-	<button>Pupgrade Me</button>
+	<form>
+		<label for="zip">What's your zip code?
+			<input type="text" id="zip" ng-model="userZip"/>
+		</label>
+		<button ng-click="skipQuiz()">Pupgrade Me</button>
+		<!-- sends zipcode to the factory -->
+	</form>
 </div>
