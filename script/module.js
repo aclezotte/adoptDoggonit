@@ -31,6 +31,3 @@ app.config(function($routeProvider, $locationProvider){
 	$locationProvider.hashPrefix('');
 });
 
-
-// form, adopt, result
-//bug fix
