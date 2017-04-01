@@ -15,11 +15,6 @@ app.controller("indexCtrl", function ($scope, adoptFactory, $location) {
         $scope.hideLogo = true;
     }
 
-    // scope.submitZip2 = function () {
-    //     adoptFactory.getZip($scope.userZip);
-    //     $location.path("/result");
-    //     $scope.hideLogo = true;
-    // }
 });
 
 app.directive("quizMe", function(){

@@ -51,6 +51,14 @@
                 </li>
             </ul>
         </nav>
+    <div class="row">
+        <!-- <div class="col-xs-12" id="logoWrap"> -->
+        <header ng-hide="hideLogo" >
+            <img class="swingimage" src="images/logo.png" alt="logo"/>
+        </header>
+        <!-- changes the logo to text only logo when navigating away from the home page -->
+        <img ng-show="hideLogo" class="textlogo" src="images/logotextonly.png" alt="logo"/>
+        <!-- </div> -->
     </div>
         <div class="row">
             <!-- <div class="col-xs-12" id="logoWrap"> -->
@@ -86,20 +94,42 @@
             </div>
             <div class="col-xs-2"></div>
         </div>
-        <div class="row">
-            <ng-view></ng-view>
-        </div>
+    <div class="row">
+        <form>
+            <label for="zip">What's your zip code?
+                <input type="text" id="zip" ng-model="userZip"/>
+            </label>
+            <!-- sends zipcode to the factory -->
+            <button ng-click="submitZip()">Submit</button>
+        </form>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
-    <script src="script/module.js"></script>
-    <script src="script/controller/indexctrl.js"></script>
-    <script src="script/controller/formctrl.js"></script>
-    <script src="script/controller/resultctrl.js"></script>
-    <script src="script/controller/adoptctrl.js"></script>
-    <script src="script/adoptfactory.js"></script>
+    <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-2">
+            <quiz-me>
+            </quiz-me>
+        </div>
+        <div class="col-xs-4"></div>
+        <div class="col-xs-2">
+            <pup-grade>
+            </pup-grade>
+        </div>
+        <div class="col-xs-2"></div>
+    </div>
+    <div class="row">
+        <ng-view></ng-view>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="script/module.js"></script>
+<script src="script/controller/indexctrl.js"></script>
+<script src="script/controller/formctrl.js"></script>
+<script src="script/controller/resultctrl.js"></script>
+<script src="script/controller/adoptctrl.js"></script>
+<script src="script/adoptfactory.js"></script>
 </body>
 </html>
