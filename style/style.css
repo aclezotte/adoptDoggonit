@@ -14,7 +14,6 @@ body {
   font-family: sans-serif;
   font-size: 12px;
   color: #6d6d6d;   /* gray */
-  padding-bottom: 10%;
 }
 
 header {
@@ -25,18 +24,31 @@ header {
     margin: auto;
 }
 
+/* webkit for older versions of Chrome, Firefox, etc */
 @-webkit-keyframes swinging{
     0%{-webkit-transform: rotate(10deg);}
     50%{-webkit-transform: rotate(-5deg)}
     100%{-webkit-transform: rotate(10deg);}
 }
 
+/* 'transform: rotate' tells the animation how much to rotate. don't change these because it'll look ridiculous. trust me lol.
+0, 50, and 100% are all positions. */
+/* @keyframes tells the page we're gonna animate something. 'swinging' in this case names the animation. */
 @keyframes swinging{
     0%{transform: rotate(10deg);}
     50%{transform: rotate(-5deg)}
     100%{transform: rotate(10deg);}
 }
 
+/* 'swingimage' is the class we've placed on the image in the html. with 'transform-origin' we're telling the image where to start
+being animated. imagine the logo hanging on a nail. at 50% we're telling the image to start swinging right in the middle. if we
+wanted to offset that, we could change the percentage. the first value controls horizontal movement. the second controls vertical.
+
+'ease-in-out' tells the image how to begin and end each cycle essentially. it makes the smooth glide when the swinging reaches peaks.
+
+'infinite' makes it run forever, and 'forwards' tells the image what to do when it is not being display (like if you scroll away from
+it). in this case, we want the image to retain the style set for 100%.
+ */
 .swingimage{
     -webkit-transform-origin: 50% 0;
     transform-origin: 50% 0;
@@ -53,10 +65,10 @@ header {
     max-width: 60%;
     position: relative;
     left: 50%;
-    margin-left: -27%;
+    margin-left: -35%;
 }
 
-/*.nav {
+.nav {
     width: 100%;
 }
 
@@ -87,7 +99,7 @@ li a:hover {
 }
 
 a:link {text-decoration:none !important;}
-a:visited {text-decoration:none !important;}*/
+a:visited {text-decoration:none !important;}
 
 .thumbnail {
     overflow: auto;
@@ -126,11 +138,9 @@ li {
 
 .quizImg {
     max-width: 100%;
-    border-radius: 15px;
-    border: 10px solid #ec4343;
 }
 
-/*button {
+button {
   background-color: #ec4343 !important;
   border: none !important;
   color: white !important;
@@ -138,8 +148,8 @@ li {
   text-align: center !important;
   text-decoration: none !important;
   display: inline-block !important;
-  font-size: 1.5em;*/
-
+  font-size: 1.5em;
+}
 .petBox {
     border: 5px solid #f9d927;
     margin: 2% auto;
@@ -159,8 +169,7 @@ li {
 	position: relative;
 	float: left;
 	clear: left;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-bottom: 200px;
 }
 #petName2{
 	font-family: sans-serif;
@@ -243,4 +252,21 @@ li {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+}
+/*
+#petImage { */
+
+
+/* ----------- tablets ----------- */
+@media only screen
+  and (min-width: 737px)
+  and (max-width: 1024px)  {
+
+}
+
+/* ------------- phones ----------- */
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 736px)  {
+
 }

@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
     <link type="text/css" rel="stylesheet" href="style/style.css">
-    <title>Pa'tnah lemme Pupgrade U ™</title>
+    <title>Pupgrade U ™ | find your fur-ever friend</title>
 </head>
 <body ng-app="badaBingBadaBoom" ng-controller="indexCtrl">
     <div class="container">
@@ -38,6 +38,7 @@
         <!-- <div class="row" id="header">
             <ul class="nav">
                 <li>
+                  <!-- 'tab' allows for the showing/hiding of the logo for pages other than home -->
                     <a ng-click="tab('', false)">Home</a>
                 </li>
                 <li>
@@ -56,6 +57,7 @@
                 <header ng-hide="hideLogo" >
                     <img class="swingimage" src="images/logo.png" width="850" height="502" alt="logo" align="center"/>
                 </header>
+                <!-- changes the logo to text only logo when navigating away from the home page -->
                 <img ng-show="hideLogo" class="textlogo" src="images/logotextonly.png" alt="logo" align="center"/>
             </div>
         </div>
@@ -67,6 +69,7 @@
                 <label for="zip">What's your zip code?
                     <input type="text" id="zip" ng-model="userZip"/>
                 </label>
+                <!-- sends zipcode to the factory -->
                 <button ng-click="submitZip()">Submit</button>
             </form>
         </div>
