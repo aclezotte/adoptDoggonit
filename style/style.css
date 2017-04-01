@@ -86,7 +86,7 @@ li a:hover {
 }
 
 a:link {text-decoration:none !important;}
-a:visited {text-decoration:none !important;}*/
+a:visited {text-decoration:none !important;}
 
 .thumbnail {
     overflow: auto;
@@ -129,7 +129,8 @@ button {
 	position: relative;
 	float: left;
 	clear: left;
-	padding-bottom: 200px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 #petName2{
 	font-family: sans-serif;
@@ -213,5 +214,4 @@ button {
 	margin-right: auto;
 	display: block;
 }
-/*
-#petImage {
+

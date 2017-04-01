@@ -17,4 +17,3 @@ app.controller("resultCtrl", ["$scope", "adoptFactory", "$location", function ($
     };
 
 }]);
-//bug fix

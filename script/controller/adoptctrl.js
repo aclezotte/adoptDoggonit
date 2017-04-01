@@ -7,4 +7,4 @@ app.controller("adoptCtrl", ["$scope", "adoptFactory", function ($scope, adoptFa
 
 }]);
 
-//bug fix
+
