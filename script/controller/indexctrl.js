@@ -34,15 +34,6 @@ app.directive("quizMe", function(){
 
 app.directive("pupGrade", function(){
 
-    // var controller = ["$scope", function($scope) {
-    //     $scope.skipQuiz = function () {
-    //         adoptFactory.getZip($scope.userZip);
-    //         adoptFactory.noQuiz();
-    //         $location.path("/result");
-    //         $scope.hideLogo = true;
-    //     }
-    // }];
-
     return {
         restrict: "E",
         // controller: "pupgradeCtrl",
