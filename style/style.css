@@ -109,7 +109,7 @@ it). in this case, we want the image to retain the style set for 100%.
 }
 
 #about {
-  width: 20%;
+  width: 100%;
   background-color: #fb7676;
 }
 
@@ -308,4 +308,3 @@ button {
   and (max-width: 736px)  {
 
 }
-
