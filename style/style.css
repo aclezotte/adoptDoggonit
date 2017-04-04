@@ -264,6 +264,11 @@ button {
     display: none;
 }
 
+quiz-me, pup-grade {
+    float: left;
+    margin: 1%;
+}
+
 /*
 #petImage { */
 
@@ -303,4 +308,3 @@ button {
   and (max-width: 736px)  {
 
 }
-
