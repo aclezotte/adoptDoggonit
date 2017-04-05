@@ -67,15 +67,19 @@
         <!-- </div> -->
     </div>
     <div class="row">
-<br><br><br><br><br><br><br><br>
-      <img src="images/what.png" alt="">
-      <section id="about"><p>THIS IS JUST A TEST. CLICK 'ABOUT'.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></section>
-<br><br><br>
-    </div>
+    <!-- <br><br>  <img src="images/fbq.png" align="center"> -->
+<br><br><br><br><br>
+      <img src="images/what.png">
+        <section id="about"><p><a onclick="$('#name').animatescroll({scrollSpeed:1000,easing:'easeOutBounce'});">Pupgrade U ™</a> is a web application designed to match its users with an adoptable shelter dog. Our nonsensically meaningful questionnaire collects data about you and your lifestyle. That data combined with a little behind the scenes magic renders a list of adorable, loving dogs waiting to be your new family member. <br><br>Below, you'll be prompted to enter your zip code and then given the options of "Find me a pup" and "Pupgrade Me". "Find me a pup" will direct you to our quiz, while "Pupgrade Me" will allow you to browse furry friends on your own.</p></section>
+      <br><br><br><img src="images/name.png">
+        <section id="name"><img src="https://s-media-cache-ak0.pinimg.com/736x/2d/ed/54/2ded5498b1b9a8471cb293cf8ddcddce.jpg" width="150px" height="120px" align="center"><p> Our name is inspired by Beyoncé's "Upgrade U", released in 2006 on her sophomore album, <i>B'Day</i>. <a onclick="$('#us').animatescroll({scrollSpeed:1000,easing:'easeOutBounce'});">We</a> feel Beyoncé is a good enough reason for anything.</p></section>
+<br><br><br><img src="images/we.png">
+  <section id="us"><img src="http://i1346.photobucket.com/albums/p694/robinr0927/DogsPuppys/16_zps5dcda149.jpg" align="center"><br><p>A rare photo of us. Pupgrade U was created by Adam, Jay, Mike and Emerald.</p></section>
+</div><br><br><br>
       <div class="row">
         <form>
             <!-- <label for="zip">What's your zip code? -->
-                <input class="form-control" placeholder="Zip code" type="text" id="zip" ng-model="userZip"/>
+                <input class="form-control" placeholder="What's your zip code?" type="text" id="zip" ng-model="userZip"/>
             <!-- </label> -->
         </form>
 
@@ -85,7 +89,7 @@
         </quiz-me>
         <pup-grade>
         </pup-grade>
-    </div>
+    </div><br>
     <div class="row">
         <ng-view></ng-view>
     </div>
