@@ -88,6 +88,10 @@ it). in this case, we want the image to retain the style set for 100%.
     margin-left: -30%;
 }
 
+#normalNav {
+    margin-bottom: 3%;
+}
+
 #normalNav li {
     float: left;
     list-style-type: none;
