@@ -1,104 +1,97 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
-    <link type="text/css" rel="stylesheet" href="style/style.css">
-    <title>Pupgrade U ™ | find your fur-ever friend</title>
-</head>
-<body ng-app="badaBingBadaBoom" ng-controller="indexCtrl">
-    <div class="container">
-        <nav class="navbar">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
-                        <span class="glyphicon glyphicon-menu-hamburger"></span>
-                    </button>
+    <head>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+        <link type="text/css" rel="stylesheet" href="style/style.css">
+        <title>Pupgrade U ™ | find your fur-ever friend</title>
+    </head>
+    <body ng-app="badaBingBadaBoom" ng-controller="indexCtrl">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a ng-click="tab('', false)">Home</a>
+                            </li>
+                            <li>
+                                <a onclick="$('#about').animatescroll({scrollSpeed:4000,easing:'easeOutBounce'});">About</a>
+                            </li>
+                            <li>
+                                <a ng-click="tab('/form', true)">Quiz</a>
+                            </li>
+                            <li>
+                                <a ng-click="tab('/result', true)">Results</a>
+                            </li>
+                            <li>
+                                <a ng-click="tab('/adopt', true)">Adopt</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a ng-click="tab('', false)">Home</a>
-                        </li>
-                        <li>
-                            <a onclick="$('#about').animatescroll({scrollSpeed:4000,easing:'easeOutBounce'});">About</a>
-                        </li>
-                        <li>
-                            <a ng-click="tab('/form', true)">Quiz</a>
-                        </li>
-                        <li>
-                            <a ng-click="tab('/result', true)">Results</a>
-                        </li>
-                        <li>
-                            <a ng-click="tab('/adopt', true)">Adopt</a>
-                        </li>
-                    </ul>
-                </div>
+            </nav>
+            <nav id="normalNav">
+                <ul>
+                    <li>
+                        <a ng-click="tab('', false)">Home</a>
+                    </li>
+                    <li>
+                        <a onclick="$('#about').animatescroll({scrollSpeed:4000,easing:'easeOutBounce'});">About</a>
+                    </li>
+                    <li>
+                        <a ng-click="tab('/form', true)">Quiz</a>
+                    </li>
+                    <li>
+                        <a ng-click="tab('/result', true)">Results</a>
+                    </li>
+                    <li>
+                        <a ng-click="tab('/adopt', true)">Adopt</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="row">
+                <header ng-hide="hideLogo" >
+                    <img class="swingimage" src="images/logo.png" alt="logo"/>
+                </header>
+                <!-- changes the logo to text only logo when navigating away from the home page -->
+                <img ng-show="hideLogo" class="textlogo" src="images/logotextonly.png" alt="logo"/>
             </div>
-        </nav>
-        <nav id="normalNav">
-            <ul>
-                <li>
-                    <a ng-click="tab('', false)">Home</a>
-                </li>
-                <li>
-                    <a onclick="$('#about').animatescroll({scrollSpeed:4000,easing:'easeOutBounce'});">About</a>
-                </li>
-                <li>
-                    <a ng-click="tab('/form', true)">Quiz</a>
-                </li>
-                <li>
-                    <a ng-click="tab('/result', true)">Results</a>
-                </li>
-                <li>
-                    <a ng-click="tab('/adopt', true)">Adopt</a>
-                </li>
-            </ul>
-        </nav>
-    <div class="row">
-        <!-- <div class="col-xs-12" id="logoWrap"> -->
-        <header ng-hide="hideLogo" >
-            <img class="swingimage" src="images/logo.png" alt="logo"/>
-        </header>
-        <!-- changes the logo to text only logo when navigating away from the home page -->
-        <img ng-show="hideLogo" class="textlogo" src="images/logotextonly.png" alt="logo"/>
-        <!-- </div> -->
-    </div>
-    <div class="row">
-
-      <section id="about"><p>THIS IS JUST A TEST. CLICK 'ABOUT'.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></section>
-
-        <form>
-            <!-- <label for="zip">What's your zip code? -->
-                <input class="form-control" placeholder="Zip code" type="text" id="zip" ng-model="userZip"/>
-            <!-- </label> -->
-        </form>
-
-    </div>
-    <div class="row">
-        <quiz-me >
-        </quiz-me>
-        <pup-grade>
-        </pup-grade>
-    </div>
-    <div class="row">
-        <ng-view></ng-view>
-    </div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="animatescroll.js"></script>
-<script src="bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
-<script src="script/module.js"></script>
-<script src="script/controller/indexctrl.js"></script>
-<script src="script/controller/formctrl.js"></script>
-<script src="script/controller/resultctrl.js"></script>
-<script src="script/controller/adoptctrl.js"></script>
-<!-- <script src="script/controller/pupgradeCtrl.js"></script> -->
-<script src="script/adoptfactory.js"></script>
-</body>
+            <div class="row">
+                <section id="about">
+                    <p>THIS IS JUST A TEST. CLICK 'ABOUT'.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </section>
+                <form>
+                    <label for="zip">What's your zip code?
+                        <input class="form-control" placeholder="Zip code" type="text" id="zip" ng-model="userZip"/>
+                    </label>
+                </form>
+            </div>
+            <div class="row">
+                <quiz-me >
+                </quiz-me>
+                <pup-grade>
+                </pup-grade>
+            </div>
+            <div class="row">
+                <ng-view></ng-view>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="animatescroll.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <script src="script/module.js"></script>
+        <script src="script/controller/indexctrl.js"></script>
+        <script src="script/controller/formctrl.js"></script>
+        <script src="script/controller/resultctrl.js"></script>
+        <script src="script/controller/adoptctrl.js"></script>
+        <script src="script/adoptfactory.js"></script>
+    </body>
 </html>
