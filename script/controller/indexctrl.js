@@ -28,7 +28,7 @@ app.directive("quizMe", function(){
     return {
         restrict: "E",
         templateUrl: "quiz-me.html",
-        replace: false
+        replace: true
     };
  })
 
@@ -38,6 +38,6 @@ app.directive("pupGrade", function(){
         restrict: "E",
         // controller: "pupgradeCtrl",
         templateUrl: "pup-grade.html",
-        replace: false
+        replace: true
     };
 });
