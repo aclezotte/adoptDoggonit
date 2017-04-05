@@ -23,7 +23,7 @@
                             <a ng-click="tab('', false)">Home</a>
                         </li>
                         <li>
-                            <a onclick="$('#about').animatescroll({scrollSpeed:4000,easing:'easeOutBounce'});">About</a>
+                            <a onclick="$('#about').animatescroll({scrollSpeed:1000,easing:'easeOutBounce'});">What is this???</a>
                         </li>
                         <li>
                             <a ng-click="tab('/form', true)">Quiz</a>
@@ -44,7 +44,7 @@
                     <a ng-click="tab('', false)">Home</a>
                 </li>
                 <li>
-                    <a onclick="$('#about').animatescroll({scrollSpeed:4000,easing:'easeOutBounce'});">About</a>
+                    <a onclick="$('#about').animatescroll({scrollSpeed:1000,easing:'easeOutBounce'});">What is this???</a>
                 </li>
                 <li>
                     <a ng-click="tab('/form', true)">Quiz</a>
@@ -67,9 +67,12 @@
         <!-- </div> -->
     </div>
     <div class="row">
-
-      <section id="about"><p>THIS IS JUST A TEST. CLICK 'ABOUT'.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></section>
-
+<br><br><br><br><br><br><br><br>
+      <img src="images/what.png" alt="">
+      <section id="about"><p>THIS IS JUST A TEST. CLICK 'ABOUT'.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></section>
+<br><br><br>
+    </div>
+      <div class="row">
         <form>
             <label for="zip">What's your zip code?
                 <input type="text" id="zip" ng-model="userZip"/>

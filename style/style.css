@@ -9,6 +9,11 @@ tan: #ddb989
 
 */
 
+@font-face {
+    font-family: 'Porkys';
+    src: url('font/PORKYS_.TTF');
+}
+
 body {
   background-color: #ffffff;
   font-family: sans-serif;
@@ -97,7 +102,9 @@ it). in this case, we want the image to retain the style set for 100%.
 #normalNav a {
     display: block;
     text-decoration: none;
-    color: black;
+    font-family: Porkys;
+    font-size: 15px;
+    color: #ec4343;
     background-color: #f9d927;
     text-align: center;
     padding: 7%;
@@ -105,12 +112,16 @@ it). in this case, we want the image to retain the style set for 100%.
 
 #normalNav a:hover {
     background-color: #ec4343;
+    font-family: Porkys;
+    font-size: 15px;
+    text-transform: uppercase;
     color: white;
 }
 
 #about {
+  padding: 5px;
   width: 100%;
-  background-color: #fb7676;
+  background-color: #ddb989;
 }
 
 .thumbnail {
