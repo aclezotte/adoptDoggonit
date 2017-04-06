@@ -3,8 +3,6 @@
 <head>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
     <link type="text/css" rel="stylesheet" href="style/style.css">
     <title>Pupgrade U ™ | find your fur-ever friend</title>
 </head>
@@ -35,90 +33,9 @@
                             <a ng-click="tab('/adopt', true)">Adopt</a>
                         </li>
                     </ul>
-=======
-    <head>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
-        <link type="text/css" rel="stylesheet" href="style/style.css">
-        <title>Pupgrade U ™ | find your fur-ever friend</title>
-    </head>
-    <body ng-app="badaBingBadaBoom" ng-controller="indexCtrl">
-        <div class="container">
-            <nav class="navbar">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
-                            <span class="glyphicon glyphicon-menu-hamburger"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li>
-                                <a ng-click="tab('', false)">Home</a>
-                            </li>
-                            <li>
-                                <a onclick="$('#about').animatescroll({scrollSpeed:4000,easing:'easeOutBounce'});">About</a>
-                            </li>
-                            <li>
-                                <a ng-click="tab('/form', true)">Quiz</a>
-                            </li>
-                            <li>
-                                <a ng-click="tab('/result', true)">Results</a>
-                            </li>
-                            <li>
-                                <a ng-click="tab('/adopt', true)">Adopt</a>
-                            </li>
-                        </ul>
-                    </div>
-
                 </div>
-            </nav>
-            <nav id="normalNav">
-                <ul>
-                    <li>
-                        <a ng-click="tab('', false)">Home</a>
-                    </li>
-                    <li>
-                        <a onclick="$('#about').animatescroll({scrollSpeed:4000,easing:'easeOutBounce'});">About</a>
-                    </li>
-                    <li>
-                        <a ng-click="tab('/form', true)">Quiz</a>
-                    </li>
-                    <li>
-                        <a ng-click="tab('/result', true)">Results</a>
-                    </li>
-                    <li>
-                        <a ng-click="tab('/adopt', true)">Adopt</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="row">
-                <header ng-hide="hideLogo" >
-                    <img class="swingimage" src="images/logo.png" alt="logo"/>
-                </header>
-                <!-- changes the logo to text only logo when navigating away from the home page -->
-                <img ng-show="hideLogo" class="textlogo" src="images/logotextonly.png" alt="logo"/>
-            </div>
-            <div class="row">
-                <section id="about">
-                    <p>THIS IS JUST A TEST. CLICK 'ABOUT'.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </section>
-                <form>
-                    <label for="zip">What's your zip code?
-                        <input class="form-control" placeholder="Zip code" type="text" id="zip" ng-model="userZip"/>
-                    </label>
-                </form>
-            </div>
-            <div class="row">
-                <quiz-me >
-                </quiz-me>
-                <pup-grade>
-                </pup-grade>
-            </div>
-            <div class="row">
-                <ng-view></ng-view>
-            </div>
 
+            </div>
         </nav>
         <nav id="normalNav">
             <ul>
@@ -139,39 +56,35 @@
                 </li>
             </ul>
         </nav>
+        <div class="row">
+            <header ng-hide="hideLogo" >
+                <img class="swingimage" src="images/logo.png" alt="logo"/>
+            </header>
+            <!-- changes the logo to text only logo when navigating away from the home page -->
+            <img ng-show="hideLogo" class="textlogo" src="images/logotextonly.png" alt="logo"/>
+        </div>
+        <div class="row">
+            <br><br><br><br><br>
+            <img src="images/what.png">
+            <section id="about"><p><a onclick="$('#name').animatescroll({scrollSpeed:1000,easing:'easeOutBounce'});">Pupgrade U ™</a> is a web application designed to match its users with an adoptable shelter dog. Our nonsensically meaningful questionnaire collects data about you and your lifestyle. That data combined with a little behind the scenes magic renders a list of adorable, loving dogs waiting to be your new family member. <br><br>Below, you'll be prompted to enter your zip code and then given the options of "Find me a pup" and "Pupgrade Me". "Find me a pup" will direct you to our quiz, while "Pupgrade Me" will allow you to browse furry friends on your own.</p></section>
+            <br><br><br><img src="images/name.png">
+            <section id="name"><img src="https://s-media-cache-ak0.pinimg.com/736x/2d/ed/54/2ded5498b1b9a8471cb293cf8ddcddce.jpg" width="150px" height="120px" align="center"><p> Our name is inspired by Beyoncé's "Upgrade U", released in 2006 on her sophomore album, <i>B'Day</i>. <a onclick="$('#us').animatescroll({scrollSpeed:1000,easing:'easeOutBounce'});">We</a> feel Beyoncé is a good enough reason for anything.</p></section>
+            <br><br><br><img src="images/we.png">
+            <section id="us"><img src="http://i1346.photobucket.com/albums/p694/robinr0927/DogsPuppys/16_zps5dcda149.jpg" align="center"><br><p>A rare photo of us. Pupgrade U was created by Adam, Jay, Mike and Emerald.</p></section>
+        </div><br><br><br>
     <div class="row">
-        <!-- <div class="col-xs-12" id="logoWrap"> -->
-        <header ng-hide="hideLogo" >
-            <img class="swingimage" src="images/logo.png" alt="logo"/>
-        </header>
-        <!-- changes the logo to text only logo when navigating away from the home page -->
-        <img ng-show="hideLogo" class="textlogo" src="images/logotextonly.png" alt="logo"/>
-        <!-- </div> -->
-    </div>
-    <div class="row">
-    <!-- <br><br>  <img src="images/fbq.png" align="center"> -->
-<br><br><br><br><br>
-      <img src="images/what.png">
-        <section id="about"><p><a onclick="$('#name').animatescroll({scrollSpeed:1000,easing:'easeOutBounce'});">Pupgrade U ™</a> is a web application designed to match its users with an adoptable shelter dog. Our nonsensically meaningful questionnaire collects data about you and your lifestyle. That data combined with a little behind the scenes magic renders a list of adorable, loving dogs waiting to be your new family member. <br><br>Below, you'll be prompted to enter your zip code and then given the options of "Find me a pup" and "Pupgrade Me". "Find me a pup" will direct you to our quiz, while "Pupgrade Me" will allow you to browse furry friends on your own.</p></section>
-      <br><br><br><img src="images/name.png">
-        <section id="name"><img src="https://s-media-cache-ak0.pinimg.com/736x/2d/ed/54/2ded5498b1b9a8471cb293cf8ddcddce.jpg" width="150px" height="120px" align="center"><p> Our name is inspired by Beyoncé's "Upgrade U", released in 2006 on her sophomore album, <i>B'Day</i>. <a onclick="$('#us').animatescroll({scrollSpeed:1000,easing:'easeOutBounce'});">We</a> feel Beyoncé is a good enough reason for anything.</p></section>
-<br><br><br><img src="images/we.png">
-  <section id="us"><img src="http://i1346.photobucket.com/albums/p694/robinr0927/DogsPuppys/16_zps5dcda149.jpg" align="center"><br><p>A rare photo of us. Pupgrade U was created by Adam, Jay, Mike and Emerald.</p></section>
-</div><br><br><br>
-      <div class="row">
         <form>
-            <!-- <label for="zip">What's your zip code? -->
-                <input class="form-control" placeholder="What's your zip code?" type="text" id="zip" ng-model="userZip"/>
-            <!-- </label> -->
+            <label for="zip">What's your zip code?
+                <input class="form-control" placeholder="Zip code" type="text" id="zip" ng-model="userZip"/>
+            </label>
         </form>
-
     </div>
     <div class="row">
         <quiz-me >
         </quiz-me>
         <pup-grade>
         </pup-grade>
-    </div><br>
+    </div>
     <div class="row">
         <ng-view></ng-view>
     </div>
@@ -191,18 +104,18 @@
 <script src="script/adoptfactory.js"></script>
 </body>
 
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script src="animatescroll.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
-        <script src="script/module.js"></script>
-        <script src="script/controller/indexctrl.js"></script>
-        <script src="script/controller/formctrl.js"></script>
-        <script src="script/controller/resultctrl.js"></script>
-        <script src="script/controller/adoptctrl.js"></script>
-        <script src="script/adoptfactory.js"></script>
-    </body>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="animatescroll.js"></script>
+<script src="bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="script/module.js"></script>
+<script src="script/controller/indexctrl.js"></script>
+<script src="script/controller/formctrl.js"></script>
+<script src="script/controller/resultctrl.js"></script>
+<script src="script/controller/adoptctrl.js"></script>
+<script src="script/adoptfactory.js"></script>
+</body>
 
 </html>
