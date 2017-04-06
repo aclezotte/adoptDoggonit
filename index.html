@@ -21,7 +21,7 @@
                             <a ng-click="tab('', false)">Home</a>
                         </li>
                         <li>
-                            <a onclick="$('#about').animatescroll({scrollSpeed:1000,easing:'easeOutBounce'});">What is this???</a>
+                            <a onclick="$('#scrollImg').animatescroll({scrollSpeed:1000,easing:'easeOutBounce'});">What is this???</a>
                         </li>
                         <li>
                             <a ng-click="tab('/form', true)">Quiz</a>
@@ -43,7 +43,7 @@
                     <a ng-click="tab('', false)">Home</a>
                 </li>
                 <li>
-                    <a onclick="$('#about').animatescroll({scrollSpeed:1000,easing:'easeOutBounce'});">What is this???</a>
+                    <a onclick="$('#scrollImg').animatescroll({scrollSpeed:1000,easing:'easeOutBounce'});">What is this???</a>
                 </li>
                 <li>
                     <a ng-click="tab('/form', true)">Quiz</a>
@@ -56,7 +56,7 @@
                 </li>
             </ul>
         </nav>
-        <div class="row">
+        <div class="row" id="logoRow">
             <header ng-hide="hideLogo" >
                 <img class="swingimage" src="images/logo.png" alt="logo"/>
             </header>
@@ -64,15 +64,13 @@
             <img ng-show="hideLogo" class="textlogo" src="images/logotextonly.png" alt="logo"/>
         </div>
         <div class="row" ng-hide="hideLogo">
-            <br><br><br><br><br>
-            <img src="images/what.png">
+            <img id="scrollImg" src="images/what.png">
             <section id="about"><p><a onclick="$('#name').animatescroll({scrollSpeed:1000,easing:'easeOutBounce'});">Pupgrade U ™</a> is a web application designed to match its users with an adoptable shelter dog. Our nonsensically meaningful questionnaire collects data about you and your lifestyle. That data combined with a little behind the scenes magic renders a list of adorable, loving dogs waiting to be your new family member. <br><br>Below, you'll be prompted to enter your zip code and then given the options of "Find me a pup" and "Pupgrade Me". "Find me a pup" will direct you to our quiz, while "Pupgrade Me" will allow you to browse furry friends on your own.</p></section>
-            <br><br><br><img src="images/name.png">
+            <img src="images/name.png">
             <section id="name"><img src="https://s-media-cache-ak0.pinimg.com/736x/2d/ed/54/2ded5498b1b9a8471cb293cf8ddcddce.jpg" width="150px" height="120px" align="center"><p> Our name is inspired by Beyoncé's "Upgrade U", released in 2006 on her sophomore album, <i>B'Day</i>. <a onclick="$('#us').animatescroll({scrollSpeed:1000,easing:'easeOutBounce'});">We</a> feel Beyoncé is a good enough reason for anything.</p></section>
-            <br><br><br><img src="images/we.png">
+            <img src="images/we.png">
             <section id="us"><img src="http://i1346.photobucket.com/albums/p694/robinr0927/DogsPuppys/16_zps5dcda149.jpg" align="center"><br><p>A rare photo of us. Pupgrade U was created by Adam, Jay, Mike and Emerald.</p></section>
-        </div><br><br><br>
-        <div class="row">
+        <div class="row" id="zipBox">
             <form>
                 <label for="zip">What's your zip code?
                     <input class="form-control" placeholder="Zip code" type="text" id="zip" ng-model="userZip"/>
