@@ -11,7 +11,7 @@ tan: #ddb989
 
 @font-face {
     font-family: 'Porkys';
-    src: url('font/PORKYS_.TTF');
+    src: url('../font/PORKYS_.TTF');
 }
 
 body {

@@ -63,7 +63,7 @@
             <!-- changes the logo to text only logo when navigating away from the home page -->
             <img ng-show="hideLogo" class="textlogo" src="images/logotextonly.png" alt="logo"/>
         </div>
-        <div class="row">
+        <div class="row" ng-hide="hideLogo">
             <br><br><br><br><br>
             <img src="images/what.png">
             <section id="about"><p><a onclick="$('#name').animatescroll({scrollSpeed:1000,easing:'easeOutBounce'});">Pupgrade U ™</a> is a web application designed to match its users with an adoptable shelter dog. Our nonsensically meaningful questionnaire collects data about you and your lifestyle. That data combined with a little behind the scenes magic renders a list of adorable, loving dogs waiting to be your new family member. <br><br>Below, you'll be prompted to enter your zip code and then given the options of "Find me a pup" and "Pupgrade Me". "Find me a pup" will direct you to our quiz, while "Pupgrade Me" will allow you to browse furry friends on your own.</p></section>
@@ -101,5 +101,4 @@
     <script src="script/controller/adoptctrl.js"></script>
     <script src="script/adoptfactory.js"></script>
 </body>
-
 </html>
