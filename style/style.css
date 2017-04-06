@@ -165,6 +165,14 @@ it). in this case, we want the image to retain the style set for 100%.
     float: left;
 }
 
+#zipBox {
+    font-size: 2em;
+}
+
+.headerImg {
+    margin: auto;
+}
+
 .thumbnail {
     overflow: auto;
 }
